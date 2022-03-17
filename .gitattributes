@@ -1,0 +1,7 @@
+CityZoomer/Assets/3D/Models/futuristic_skyscrapers_pack/scene.bin filter=lfs diff=lfs merge=lfs -text
+CityZoomer/Assets/3D/Models/Futuristic_Skyscrapers_packAdd/city_pack.dae filter=lfs diff=lfs merge=lfs -text
+CityZoomer/Assets/3D/Models/Futuristic_Skyscrapers_packAdd/city_pack.ply filter=lfs diff=lfs merge=lfs -text
+CityZoomer/Assets/3D/Models/Futuristic_Skyscrapers_packAdd/city_scene1.blend filter=lfs diff=lfs merge=lfs -text
+CityZoomer/Assets/3D/Models/Futuristic_Skyscrapers_packAdd/city_scene1.blend1 filter=lfs diff=lfs merge=lfs -text
+CityZoomer/Assets/3D/Models/Futuristic_Skyscrapers_packAdd/city_scene1.obj filter=lfs diff=lfs merge=lfs -text
+CityZoomer/Assets/3D/Models/Futuristic_Skyscrapers_packAdd/city_scene1.stl filter=lfs diff=lfs merge=lfs -text
