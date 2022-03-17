@@ -1,0 +1,166 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: nana_eyebrow
+  m_Shader: {fileID: 4800000, guid: 77960fe33e11ed443a3c6ccb8e423f11, type: 3}
+  m_ShaderKeywords: DROPSHADOW _STENCILMODE_ON
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: 2000
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _BaseTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _BumpMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DetailAlbedoMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DetailMask:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DetailNormalMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _EmissionMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _HilightmapTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MainTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MetallicGlossMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _OcclusionMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _ParallaxMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _ShadowTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _ShadowmapTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _SystemShadowColorTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _ToonHilightTex:
+        m_Texture: {fileID: 2800000, guid: c9c31f1cdab5cf5419a19dad1d4af58c, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _ToonTex:
+        m_Texture: {fileID: 2800000, guid: b14a53456365ef6429457beaa996ce52, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats:
+    - _AddLightAffect: 1
+    - _AddSystemShadowAffect: 0.5
+    - _AlphaToMask: 0
+    - _AmbientLightColor: 1
+    - _AmbientTilt: 1
+    - _BCmixMethod: 0
+    - _BaseTexMix: 0
+    - _BumpScale: 1
+    - _ColorMask: 15
+    - _CullMode: 2
+    - _Cutoff: 0.5
+    - _DetailNormalMapScale: 1
+    - _DstBlend: 0
+    - _EdgeThickness: 1
+    - _GlossMapScale: 1
+    - _Glossiness: 0.5
+    - _GlossyReflections: 1
+    - _HandleShadow: 1
+    - _HilightHardness: 15
+    - _HilightIntensity: 1
+    - _HilightPower: 0
+    - _HilightSpread: 1
+    - _IsBaseColor: 1
+    - _IsCustomRQ: 0
+    - _IsHilightColor: 1
+    - _IsShadowColor: 1
+    - _IsSystemShadowColor: 1
+    - _LightingDir: 0
+    - _MainLightAffect: 1
+    - _Metallic: 0
+    - _Mode: 0
+    - _NormalSpherical: 0
+    - _OcclusionStrength: 1
+    - _Parallax: 0.02
+    - _RQ: 2000
+    - _ReadMask: 255
+    - _ReadMask_f: 255
+    - _RefV: 6
+    - _RefV_f: 1
+    - _SCmixMethod: 0
+    - _SaturatedValue: 1.25
+    - _ShadowAffect: 1
+    - _ShadowHilightIntensity: 0.6
+    - _ShadowTexMix: 0
+    - _SmoothnessTextureChannel: 0
+    - _SpecularHighlights: 1
+    - _SrcBlend: 1
+    - _StencilFade: 1
+    - _StencilMode: 1
+    - _SystemShadowAffect: 0.5
+    - _UVSec: 0
+    - _WriteMask: 255
+    - _WriteMask_f: 255
+    - _ZTest: 4
+    - _ZWrite: 1
+    - _blendMode: 0
+    - _edgeMode: 0
+    - _hilightMode: 0
+    - _stComp: 8
+    - _stComp_c: 8
+    - _stFail: 0
+    - _stFail_c: 0
+    - _stPass: 2
+    - _stPass_c: 2
+    - _stZFail: 0
+    - _stZFail_c: 0
+    - _vc2edge: 0
+    m_Colors:
+    - _AnchorPoint: {r: 0, g: 0, b: 0, a: 1}
+    - _BaseColor: {r: 0.3254902, g: 0.23529412, b: 0.2509804, a: 1}
+    - _Color: {r: 1, g: 1, b: 1, a: 1}
+    - _EdgeColor: {r: 0, g: 0, b: 0, a: 1}
+    - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
+    - _HilightColor: {r: 0.2352941, g: 0.21280275, b: 0.21280275, a: 1}
+    - _MappingRotation: {r: 0, g: 0, b: 0, a: 1}
+    - _MappingScale: {r: 1, g: 1, b: 1, a: 1}
+    - _ShadowColor: {r: 0.28676468, g: 0.20663926, b: 0.22057414, a: 1}
+    - _SphericalCenter: {r: 0, g: 0, b: 0, a: 1}
+    - _SystemShadowColor: {r: 0.5661764, g: 0.537035, b: 0.5428633, a: 1}
+  m_BuildTextureStacks: []

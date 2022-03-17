@@ -1,0 +1,987 @@
+<html lang="en-US">
+
+    <head>
+        <!-- #region HEAD -->
+        <title>Easy Mesh Combiner</title>
+        <link rel="shortcut icon" type="image/png" href="DocumentationFiles/favicon/favicon" />
+        <link rel="shortcut icon" type="image/png" href="DocumentationFiles/favicon/favicon" />
+        <link rel="stylesheet" type="text/css" href="DocumentationFiles/css/rainbow-dreamweaver.css">
+        <link rel="stylesheet" type="text/css" href="DocumentationFiles/css/all-css-content.css">
+        <script src="DocumentationFiles/js/rainbow-custom-min"></script>
+        <script src="DocumentationFiles/js/javascript-core"></script>
+        <meta name="viewport" content="width=device-width">
+        <meta charset="UTF-8">
+        <!-- #endregion -->
+    </head>
+
+    <body>
+        <!-- #region TOPBAR -->
+        <div class="topBar">
+            <div class="topBarLogoIcon"><img src="DocumentationFiles/logo/logo" height="100%" /></div>
+            <div class="topBarLogoTextContainer">
+                <div class="topBarLogoText">Easy Mesh Combiner Documentation</div>
+            </div>
+            <div class="topBarItemContainer"><a href="https://www.youtube.com/channel/UCqAgiYBwAWajjFUqyJ6_xyw" target="_blank" title="MT Assets On Youtube"><img src="DocumentationFiles/topbar/youtube" /></a></div>
+            <div class="topBarItemContainer"><a href="https://windsoft.xyz/mtassets" target="_blank" title="MT Assets Website"><img src="DocumentationFiles/topbar/generic" /></a></div>
+            <div class="topBarItemContainer"><a href="https://assetstore.unity.com/publishers/40306" target="_blank" title="See More Assets From MT Assets!"><img src="DocumentationFiles/topbar/shop" /></a></div>
+            <div class="topBarItemDivider"></div>
+            <div class="topBarSupportTextContainer">
+                <div class="topBarSupportText">For support and contact</div>
+                <div class="topBarSupportTextEmail">mtassets@windsoft.xyz</div>
+            </div>
+        </div>
+        <div class="readProgressContainer">
+            <div class="readProgressBar" id="readProgressBar"></div>
+        </div>
+        <div class="fullscreenImageBackground" id="fullScreenImageViewerBg" onclick="CloseImageFullScreenViewer();"></div>
+        <div class="fullscreenImagePopupContent" id="fullScreenImageViewerPop">
+            <div class="fullscreenImagePopup">
+                <div class="fullscreenImagePopupClose"><img src="DocumentationFiles/tools/close.webp" id="fullScreenImageClose" title="Click here to close Viewer." onclick="CloseImageFullScreenViewer();" /></div>
+                <img src="" id="fullScreenImageViewerImg" />
+            </div>
+        </div>
+        <div class="fullscreenLoadingContent" id="fullscreenLoadingBlock">
+            <div class="fullscreenLoadingBg">
+                <div class="fullscreenLoading">
+                    <div><img src="DocumentationFiles/tools/loading.webp" /></div>
+                    <div></div>
+                    <div>Loading Documentation</div>
+                </div>
+            </div>
+        </div>
+        <!-- #endregion -->
+        <!-- SUBBODY -->
+        <div class="subBody">
+            <!-- SUMMARY -->
+            <div class="subBodySummary" id="summary" onscroll="OnScrollSummary(this);" onmouseover="isMouseOverTheSummary(this, true);" onmouseout="isMouseOverTheSummary(this, false);">
+                <div class="subBodySummaryTitle">Summary of Documentation</div>
+                <!-- -------------------------------------------------------------------------- START OF SUMMARY CONTENT -------------------------------------------------------------------------- -->
+                <ul>
+                    <li><a class="summaryItem" onclick="GoToDivSmoothly(this);" correspondentTopicId="1">What is the Easy Mesh Combiner?</a></li>
+                    <li><a class="summaryItem" onclick="GoToDivSmoothly(this);" correspondentTopicId="2">First Steps To Combine</a></li>
+                    <li><a class="summaryItem" onclick="GoToDivSmoothly(this);" correspondentTopicId="3">How to Combine Meshes</a></li>
+                    <li class="summarySubItem">Mesh Combiner Tool</li>
+                    <ul>
+                        <li><a class="summaryItem" onclick="GoToDivSmoothly(this);" correspondentTopicId="4">Explaining the Interface</a></li>
+                        <li><a class="summaryItem" onclick="GoToDivSmoothly(this);" correspondentTopicId="5">Settings And Options</a></li>
+                        <li><a class="summaryItem" onclick="GoToDivSmoothly(this);" correspondentTopicId="7">About the Merge Method "One Mesh Per Material"</a></li>
+                        <li><a class="summaryItem" onclick="GoToDivSmoothly(this);" correspondentTopicId="8">About the Merge Method "All In One"</a></li>
+                        <li><a class="summaryItem" onclick="GoToDivSmoothly(this);" correspondentTopicId="9">About the Merge Method "Just Material Colors"</a></li>
+                        <li><a class="summaryItem" onclick="GoToDivSmoothly(this);" correspondentTopicId="10">Using additional effects like Normal Maps, Height Maps, and more</a></li>
+                        <li><a class="summaryItem" onclick="GoToDivSmoothly(this);" correspondentTopicId="11">Warning before using EMC with HDRP, URP or Custom Shaders</a></li>
+                        <li><a class="summaryItem" onclick="GoToDivSmoothly(this);" correspondentTopicId="12">About the Combined Meshes Manager</a></li>
+                        <li><a class="summaryItem" onclick="GoToDivSmoothly(this);" correspondentTopicId="13">How to undo a previously made merge</a></li>
+                        <li><a class="summaryItem" onclick="GoToDivSmoothly(this);" correspondentTopicId="14">Current Limitations</a></li>
+                    </ul>
+                    <li class="summarySubItem">Runtime Mesh Combiner</li>
+                    <ul>
+                        <li><a class="summaryItem" onclick="GoToDivSmoothly(this);" correspondentTopicId="15">How This Component Works</a></li>
+                        <li><a class="summaryItem" onclick="GoToDivSmoothly(this);" correspondentTopicId="16">Explaining the Interface</a></li>
+                        <li><a class="summaryItem" onclick="GoToDivSmoothly(this);" correspondentTopicId="17">Settings And Options</a></li>
+                        <li><a class="summaryItem" onclick="GoToDivSmoothly(this);" correspondentTopicId="18">Runtime API</a></li>
+                        <li><a class="summaryItem" onclick="GoToDivSmoothly(this);" correspondentTopicId="19">Example Code To Combine Meshes In Runtime</a></li>
+                    </ul>
+                    <li class="summarySubItem">Incredible Tips That Can Be Useful</li>
+                    <ul>
+                        <li><a class="summaryItem" onclick="GoToDivSmoothly(this);" correspondentTopicId="20">Avoid differences in positioning of Normal Maps and other Maps in the mesh resulting from the merge</a></li>
+                        <li><a class="summaryItem" onclick="GoToDivSmoothly(this);" correspondentTopicId="21">Edges Mip Map Size Tip</a></li>
+                        <li><a class="summaryItem" onclick="GoToDivSmoothly(this);" correspondentTopicId="22">How to Create Prefabs With EMC</a></li>
+                    </ul>
+                    <li class="summarySubItem">Problems solution</li>
+                    <ul>
+                        <li><a class="summaryItem" onclick="GoToDivSmoothly(this);" correspondentTopicId="23">Mesh Filter or Mesh Renderer component missing</a></li>
+                        <li><a class="summaryItem" onclick="GoToDivSmoothly(this);" correspondentTopicId="24">Mesh Filter component missing</a></li>
+                        <li><a class="summaryItem" onclick="GoToDivSmoothly(this);" correspondentTopicId="25">Mesh Renderer component missing</a></li>
+                        <li><a class="summaryItem" onclick="GoToDivSmoothly(this);" correspondentTopicId="26">Have null mesh in Mesh Filter</a></li>
+                        <li><a class="summaryItem" onclick="GoToDivSmoothly(this);" correspondentTopicId="27">There are insufficient materials, or in excess</a></li>
+                        <li><a class="summaryItem" onclick="GoToDivSmoothly(this);" correspondentTopicId="28">Have null materials in Mesh Renderer</a></li>
+                        <li><a class="summaryItem" onclick="GoToDivSmoothly(this);" correspondentTopicId="29">Assertion failed: Assertion failed on expression: 'count <= std::numeric_limits<UInt16>::max()'...</a></li>
+                        <li><a class="summaryItem" onclick="GoToDivSmoothly(this);" correspondentTopicId="30">SetPerIndexUVs failed because the output has >64K vertices</a></li>
+                        <li><a class="summaryItem" onclick="GoToDivSmoothly(this);" correspondentTopicId="31">Runtime Merge Error "Cannot combine mesh that does not allow access: MeshName..."</a></li>
+                        <li><a class="summaryItem" onclick="GoToDivSmoothly(this);" correspondentTopicId="32">Why isn't my atlas completely filled with my Models textures?</a></li>
+                        <li><a class="summaryItem" onclick="GoToDivSmoothly(this);" correspondentTopicId="33">Why did the Verts/Tris count increase in my scene after merging?</a></li>
+                        <li><a class="summaryItem" onclick="GoToDivSmoothly(this);" correspondentTopicId="33a">After combining your meshes using the "All In One" method, did the atlas texture become distorted?</a></li>
+                    </ul>
+                    <li><a class="summaryItem" onclick="GoToDivSmoothly(this);" correspondentTopicId="34">Demo Scene</a></li>
+                    <li><a class="summaryItem" onclick="GoToDivSmoothly(this);" correspondentTopicId="35">Contact and Support</a></li>
+                </ul>
+                <!-- -------------------------------------------------------------------------- END OF SUMMARY CONTENT -------------------------------------------------------------------------- -->
+            </div>
+            <div class="subBodyDivider" id="divider">
+                <div id="summaryScrollIndicador" class="summaryScrollDownIndicator"><img src="DocumentationFiles/tools/scroll-down.webp" /></div>
+            </div>
+
+            <!-- DOCUMENTATION CONTENT -->
+            <div class="subBodyContent" id="content">
+                <!-- -------------------------------------------------------------------------- START OF DOCUMENTATION CONTENT -------------------------------------------------------------------------- -->
+
+                <!-- #region Welcome to Easy Mesh Combiner Documentation! -->
+                <doc.topic>
+                    <doc.topictitle>Welcome to Easy Mesh Combiner Documentation!</doc.topictitle>
+
+                    By reading this documentation, you will understand how Easy Mesh Combiner works and how to use it and get the most out of it. Come on! Make sure that this HTML file is in the same directory as the "DocumentationFiles"
+                    folder. This way you will not have problems with formatting and displaying the videos and images on the page.
+                    <doc.info>
+                        If you still have problems with the tool, even after consulting this documentation, please contact <doc.detach>mtassets@windsoft.xyz</doc.detach> for help and support. If you have any questions, problems or feedback,
+                        feel free to contact me!
+                        <br>
+                        <br>
+                        I am always willing to help, open to suggestions and always do my best to offer a quick and useful service to my customers! 😀
+                    </doc.info>
+                </doc.topic>
+                <!-- #endregion -->
+
+                <!-- #region What is the Easy Mesh Combiner? -->
+                <doc.topic topicid="1">
+                    <doc.topictitle>What is the Easy Mesh Combiner?</doc.topictitle>
+
+                    Easy Mesh Combiner is just a tool that allows you to merge your 3D meshes to reduce Draw Calls and optimize your game. You can use it either to merge the scenario's meshes or others.
+                    <doc.video src="DocumentationFiles/videos/what-is" thumbnail="DocumentationFiles/thumbs/what-is"></doc.video>
+                </doc.topic>
+                <!-- #endregion -->
+
+                <!-- #region First Steps To Combine -->
+                <doc.topic topicid="2">
+                    <doc.topictitle>First Steps To Combine</doc.topictitle>
+
+                    Before you combine your meshes, you must follow some prerequisites.
+                    <br>
+                    <br>
+                    <b>Step 1 -</b> All objects that you want to combine must have the "Mesh Filter" and "Mesh Renderer" components. If any GameObject has only 1 of these components, you will see an error message. If any GameObject does
+                    not have these 2 components, it will only be ignored.
+
+                    <doc.image src="DocumentationFiles/images/1">
+                        One of the GameObjects selected to be merged has the 2 components correctly.
+                    </doc.image>
+
+                    <b>Step 2 -</b> Make sure that all "Mesh Filter" components do not have null meshes and that all "Mesh Renderer" components do not have null materials, otherwise you may see an error message.
+
+                    <doc.image src="DocumentationFiles/images/2">
+                        In the image, the Mesh Filter component is with the null mesh, the Mesh Renderer also has 1 null material. This will cause errors during merge.
+                    </doc.image>
+
+                    <b>Step 3 -</b> Make sure there is 1 material for each submesh of your mesh. A mesh that uses more than 1 material, has submeshes. For example, if a mesh has 2 materials, it has 2 submeshes. But if you provide less
+                    materials than this mesh requires, some parts of the mesh will not be visible. If you supply more materials than this mesh needs, Unity will show you a warning. Easy Mesh Combiner requires that all meshes have the same
+                    amount of material for the same amount of submeshes.
+
+                    <doc.image src="DocumentationFiles/images/3">
+                        In the image, Mesh Renderer is providing more materials than the precise mesh. If fewer materials were being supplied than the precise mesh, parts of the mesh would not be visible. This will generate errors during
+                        merge.
+                    </doc.image>
+
+                    <b>Step 4 -</b> Now that everything is ready, it's just you to combine the meshes! For this, keep reading.
+
+                </doc.topic>
+                <!-- #endregion -->
+
+                <!-- #region How to Combine Meshes -->
+                <doc.topic topicid="3">
+                    <doc.topictitle>How to Combine Meshes</doc.topictitle>
+
+                    Combining the meshes through the Editor is super easy and you will not have to write even 1 line of code. You can even save the data in your project files. Let's start!
+                    <br>
+                    <br>
+                    <b>Step 1 -</b> Select the GameObjects you want to combine, or select the GameObject root that you want to combine the children GameObjects.
+
+                    <doc.image src="DocumentationFiles/images/4">
+                        GameObjects selected to be combined.
+                    </doc.image>
+
+                    <b>Step 2 -</b> Right click on the selection, then click on <doc.detach>Combine Meshes</doc.detach>. (If this option is not showing for you, you can click the "Tools > MT Assets > Easy Mesh Combiner > Mesh Combiner Tool"
+                    tab).
+
+                    <doc.image src="DocumentationFiles/images/5">
+                        Right-click menu.
+                    </doc.image>
+
+                    <b>Step 3 -</b> The "Combiner Tool" window will open for you. Just choose the desired options and click on <doc.detach>Combine Meshes!</doc.detach> After combining, a new GameObject with the name of your choice will
+                    appear in your GameObjects hierarchy, containing the merged mesh and you can still manage or unmerge it later if you want.
+
+                    <doc.image src="DocumentationFiles/images/6">
+                        Window Combiner Tool. You can set your merge preferences in the <doc.detach>Preferences of Merge</doc.detach> box. When you select gameobjects, they will be validated, invalid GameObjects will throw error logs in the
+                        <doc.detach>Logs of Merge</doc.detach> frame. You can see the statistics of the selected meshes before the merge and after the desired merge. It will only be possible to combine meshes if this window detects at least
+                        one valid GameObject.
+                    </doc.image>
+
+                    <b>Step 4 -</b> Now that everything is ready, it's just you to combine the meshes! You can continue reading the next topics to learn more if you want!
+
+                    <doc.warn>
+                        If you want to undo the merge, it is NOT recommended that you delete the mesh resulting from the merge manually. Always use the "Combined Meshes Manager" component for this!
+                        <br>
+                        <br>
+                        (This component is automatically added to all meshes resulting from the merge)
+                    </doc.warn>
+                    <br>
+                    <br>
+                    <doc.achiev>
+                        This was the basics for you to combine the meshes of your scenes! Continue reading the documentation to understand more about all the features of the Easy Mesh Combiner and all its components too!
+                    </doc.achiev>
+
+                </doc.topic>
+                <!-- #endregion -->
+
+                <!-- #region Mesh Combiner Tool: Explaining the Interface -->
+                <doc.topic topicid="4">
+                    <doc.topictitle>Mesh Combiner Tool: Explaining the Interface</doc.topictitle>
+
+                    In this topic, the "Mesh Combiner Tool" window interface that merges in the Editor, will be explained in parts.
+
+                    <doc.topicsubtitle>Window top bar</doc.topicsubtitle>
+
+                    In this area you have quick access to a summary of your current merge. If you have not yet done a merge and are just selecting the GameObjects you want to merge, you can see how many GameObjects are currently selected,
+                    how many meshes have been detected, among other things. This area will also display a message if your merge has already been completed successfully.
+
+                    <doc.image src="DocumentationFiles/images/7"></doc.image>
+
+                    <doc.topicsubtitle>The "Preferences of Merge" board</doc.topicsubtitle>
+
+                    This is where you set your merge preferences. Here you can define the maximum resolution of your Atlas, if you want to activate Lightmap support and many other things. You control everything around here.
+
+                    <doc.image src="DocumentationFiles/images/8"></doc.image>
+
+                    <doc.topicsubtitle>The "Logs Of Merge" board</doc.topicsubtitle>
+
+                    While selecting GameObjects so you can combine them, Easy Mesh Combiner will validate them in real time as well. If Easy Mesh Combiner finds something that is good for you to know, it will show you warning or error logs
+                    here and this happens before you merge it, so you know everything in advance. In some merge methods, notification messages can also appear here at the end of a merge to inform you of something useful or that you need to
+                    know.
+
+                    <doc.image src="DocumentationFiles/images/9"></doc.image>
+
+                    <doc.topicsubtitle>The Statistics board</doc.topicsubtitle>
+
+                    Here, you have a quick summary of the current statistics for your selected meshes that will be combined and also an estimate of the statistics of the mesh resulting from the merge. Easy Mesh Combiner will even show you
+                    the estimated optimization rate you will achieve when combining your selected meshes!
+
+                    <doc.image src="DocumentationFiles/images/10"></doc.image>
+
+                    <doc.topicsubtitle>Window bottom bar</doc.topicsubtitle>
+
+                    This is the simplest part! This is where you can operate the Easy Mesh Combiner and start your mesh merging!
+
+                    <doc.image src="DocumentationFiles/images/11"></doc.image>
+
+                </doc.topic>
+                <!-- #endregion -->
+
+                <!-- #region Mesh Combiner Tool: Settings And Options -->
+                <doc.topic topicid="5">
+                    <doc.topictitle>Mesh Combiner Tool: Settings And Options</doc.topictitle>
+
+                    Now see a table that contains all the settings, explanations and their corresponding variables of Window.
+                    <br>
+                    In the Editor Inspector, you can also always hover over a variable name, to see a detailed description of what the variable does.
+
+                    <doc.table>
+                        <doc.tablec>Name=>Description</doc.tablec>
+                        <doc.tablecw>20%=>auto</doc.tablecw>
+                        <doc.tabler>After Combine=>What should the Easy Mesh Combiner do after combine? If you choose Disable Original Meshes, only the original meshes will be disabled, keeping all other components (such as collisors and etc), so you do not waste time having to modify your scene. If you choose "Disable Original GameObjects", the oringinal GameObjects will be disabled.</doc.tabler>
+                        <doc.tabler>Combine Method=>The merge method that will be used to combine the meshes.</doc.tabler>
+                        <doc.tabler>Combine Children=>Does the Easy Mesh Combiner have to look for child meshes in the selected GameObjects?</doc.tabler>
+                        <doc.tabler>Combine Inactives=><b>[Requires <doc.detach>Combine Children</doc.detach> as true]</b><br> Does the Easy Mesh Combiner have to combine childrens meshes, which are disabled?</doc.tabler>
+                        <doc.tabler>Lightmap Support=>It causes the generated meshes to support lightmaps! Enable this option if you plan to generate lightmaps from the merged meshes. Keep in mind that enabling this option can greatly increase the merge time.</doc.tabler>
+                        <doc.tabler>Save Mesh In Assets=>If this option is active, Easy Mesh Combiner will save the combined meshes in the files of your project. This makes it easy to create prefabs, and your game will already be meshed together after building.</doc.tabler>
+                        <doc.tabler>Save Prefab Of This=>Enable this option to save a prefab automatically after the merge.</doc.tabler>
+                        <doc.tabler>Prefab Name=><b>[Requires <doc.detach>Save Prefab Of This</doc.detach> as true]</b><br> The name that will be given to the prefab generated.</doc.tabler>
+                        <doc.tabler>Name Of This Merge=>The name that the GameObject resulting from this merge will have.</doc.tabler>
+
+                        <doc.tabler><b>One Mesh Per Material<br>Parameters</b>=><b>[All Fields Below Requires <doc.detach>Combine Method</doc.detach> as OneMeshPerMaterial]</b></doc.tabler>
+                        <doc.tabler>Add Mesh Collider=>If this option is enabled, a Mesh Collider will be automatically added to the mesh resulting from the merge.</doc.tabler>
+
+                        <doc.tabler><b>All In One<br>Parameters</b>=><b>[All Fields Below Requires <doc.detach>Combine Method</doc.detach> as AllInOne]</b></doc.tabler>
+                        <doc.tabler>Material To Use=>The material that will be used in the mesh resulting from the merge.</doc.tabler>
+                        <doc.tabler>Max. Text. Per Atlas=>It represents the maximum amount of textures an Atlas can have. If the number of textures exceeds this limit, a new Atlas will be created. This avoids reducing the quality of textures in the Atlas.</doc.tabler>
+                        <doc.tabler>Atlas Max Resolution=>The maximum resolution that the Atlas resulting from the merge can have.</doc.tabler>
+                        <doc.tabler>Atlas Padding=>The spacing between each texture in the Atlas.</doc.tabler>
+                        <doc.tabler>Mip Map Edges Size=>The size of the border that each texture in the Atlas should have. The larger the border, the less chance of a transparency problem occurring while the mesh is further away from the camera.</doc.tabler>
+                        <doc.tabler>Merge Tiled Textures=>The treatment mode in which the EMC should use to combine the Tiled Textures.</doc.tabler>
+                        <doc.tabler>Default Main Tex. Prop.=>If this option is enabled, EMC will use the property names from the current SRP to find and apply the Main Textures of each mesh in its materials.</doc.tabler>
+                        <doc.tabler>Find Main Text. In=><b>[Requires <doc.detach>Default Main Tex. Prop.</doc.detach> as false]</b><br> The name of the property in which the EMC should look for textures, in the materials.</doc.tabler>
+                        <doc.tabler>Apply Main Text. In=><b>[Requires <doc.detach>Default Main Tex. Prop.</doc.detach> as false]</b><br> The name of the property on which the EMC should apply the texture to the resulting mesh Material.</doc.tabler>
+                        <doc.tabler>Metallic Map Support=>If this option is enabled, EMC will process Metallic Maps of the Meshes as well.</doc.tabler>
+                        <doc.tabler>Find Text. Maps In=><b>[Requires <doc.detach>Metallic Map Support</doc.detach> as true]</b><br> The name of the property that the EMC should look for the Metallic Maps in the materials.</doc.tabler>
+                        <doc.tabler>Apply Merged Map In=><b>[Requires <doc.detach>Metallic Map Support</doc.detach> as true]</b><br> The name of the property that the EMC should apply the Metallic Map to the Material resulting from the merge.</doc.tabler>
+                        <doc.tabler>Specu. Map Support=>If this option is enabled, EMC will process Specular Maps of the Meshes as well.</doc.tabler>
+                        <doc.tabler>Find Text. Maps In=><b>[Requires <doc.detach>Specu. Map Support</doc.detach> as true]</b><br> The name of the property that the EMC should look for the Specular Maps in the materials.</doc.tabler>
+                        <doc.tabler>Apply Merged Map In=><b>[Requires <doc.detach>Specu. Map Support</doc.detach> as true]</b><br> The name of the property that the EMC should apply the Specular Map to the Material resulting from the merge.</doc.tabler>
+                        <doc.tabler>Normal Map Support=>If this option is enabled, EMC will process Normal Maps of the Meshes as well.</doc.tabler>
+                        <doc.tabler>Find Text. Maps In=><b>[Requires <doc.detach>Normal Map Support</doc.detach> as true]</b><br> The name of the property that the EMC should look for the Normal Maps in the materials.</doc.tabler>
+                        <doc.tabler>Apply Merged Map In=><b>[Requires <doc.detach>Normal Map Support</doc.detach> as true]</b><br> The name of the property that the EMC should apply the Normal Map to the Material resulting from the merge.</doc.tabler>
+                        <doc.tabler>Normal Map 2 Support=>If this option is enabled, EMC will process Normal Maps 2 of the Meshes as well.</doc.tabler>
+                        <doc.tabler>Find Text. Maps In=><b>[Requires <doc.detach>Normal Map 2 Support</doc.detach> as true]</b><br> The name of the property that the EMC should look for the Normal Maps 2 in the materials.</doc.tabler>
+                        <doc.tabler>Apply Merged Map In=><b>[Requires <doc.detach>Normal Map 2 Support</doc.detach> as true]</b><br> The name of the property that the EMC should apply the Normal Map 2 to the Material resulting from the merge.</doc.tabler>
+                        <doc.tabler>Height Map Support=>If this option is enabled, EMC will process Height Maps of the Meshes as well.</doc.tabler>
+                        <doc.tabler>Find Text. Maps In=><b>[Requires <doc.detach>Height Map Support</doc.detach> as true]</b><br> The name of the property that the EMC should look for the Height Maps in the materials.</doc.tabler>
+                        <doc.tabler>Apply Merged Map In=><b>[Requires <doc.detach>Height Map Support</doc.detach> as true]</b><br> The name of the property that the EMC should apply the Height Map to the Material resulting from the merge.</doc.tabler>
+                        <doc.tabler>Occlus. Map Support=>If this option is enabled, EMC will process Occlusion Maps of the Meshes as well.</doc.tabler>
+                        <doc.tabler>Find Text. Maps In=><b>[Requires <doc.detach>Occlus. Map Support</doc.detach> as true]</b><br> The name of the property that the EMC should look for the Occlusion Maps in the materials.</doc.tabler>
+                        <doc.tabler>Apply Merged Map In=><b>[Requires <doc.detach>Occlus. Map Support</doc.detach> as true]</b><br> The name of the property that the EMC should apply the Occlusion Map to the Material resulting from the merge.</doc.tabler>
+                        <doc.tabler>Detail Map Support=>If this option is enabled, EMC will process Detail Maps of the Meshes as well.</doc.tabler>
+                        <doc.tabler>Find Text. Maps In=><b>[Requires <doc.detach>Detail Map Support</doc.detach> as true]</b><br> The name of the property that the EMC should look for the Detail Maps in the materials.</doc.tabler>
+                        <doc.tabler>Apply Merged Map In=><b>[Requires <doc.detach>Detail Map Support</doc.detach> as true]</b><br> The name of the property that the EMC should apply the Detail Map to the Material resulting from the merge.</doc.tabler>
+                        <doc.tabler>Detail Map Support=>If this option is enabled, EMC will process Detail Maps of the Meshes as well.</doc.tabler>
+                        <doc.tabler>Find Text. Maps In=><b>[Requires <doc.detach>Detail Map Support</doc.detach> as true]</b><br> The name of the property that the EMC should look for the Detail Mask in the materials.</doc.tabler>
+                        <doc.tabler>Apply Merged Map In=><b>[Requires <doc.detach>Detail Map Support</doc.detach> as true]</b><br> The name of the property that the EMC should apply the Detail Mask to the Material resulting from the merge.</doc.tabler>
+                        <doc.tabler>Pink Normal Maps Fix=><b>[Requires <doc.detach>Normal Map Support</doc.detach> or <doc.detach>Normal Map 2 Support</doc.detach> as true]</b><br> If this option is enabled, EMC will use an algorithm to prevent the generated Normal Maps Atlas from being colored pink. This can be useful on a variety of platforms.</doc.tabler>
+                        <doc.tabler>Add Mesh Collider=>If this option is enabled, a Mesh Collider will be automatically added to the mesh resulting from the merge.</doc.tabler>
+
+                        <doc.tabler><b>Just Material Colors<br>Parameters</b>=><b>[All Fields Below Requires <doc.detach>Combine Method</doc.detach> as JustMaterialColors]</b></doc.tabler>
+                        <doc.tabler>Material To Use=>The material that will be used in the mesh resulting from the merge.</doc.tabler>
+                        <doc.tabler>Default Color Property=>If this option is enabled, EMC will use the property names from the current SRP to find and apply the colors of each mesh in its materials.</doc.tabler>
+                        <doc.tabler>Find Colors In=><b>[Requires <doc.detach>Default Color Property</doc.detach> as false]</b><br> The name of the property in which the EMC should look for colors in Materials of each mesh.</doc.tabler>
+                        <doc.tabler>Apply Color Atlas In=><b>[Requires <doc.detach>Default Color Property</doc.detach> as false]</b><br> The name of the property to which the EMC should apply the color atlas in Material of mesh result.</doc.tabler>
+                        <doc.tabler>Add Mesh Collider=>If this option is enabled, a Mesh Collider will be automatically added to the mesh resulting from the merge.</doc.tabler>
+                    </doc.table>
+                </doc.topic>
+                <!-- #endregion -->
+
+                <!-- #region Mesh Combiner Tool: About the Merge Method "One Mesh Per Material" -->
+                <doc.topic topicid="7">
+                    <doc.topictitle>Mesh Combiner Tool: About the Merge Method "One Mesh Per Material"</doc.topictitle>
+
+                    Briefly speaking, the "One Mesh Per Material" method combines all meshes that share the same material into one. So if you have 5 meshes that use material A, those 5 meshes will be combined in 1 mesh, which will use this
+                    material A. I will explain more precisely below.
+                    <br>
+                    <br>
+                    First the Easy Mesh Combiner looks for the Meshes that are Selected. Then, the Easy Mesh Combiner groups meshes that use the same material. When you have a mesh that uses more than 1 material, the Easy Mesh Combiner
+                    will separate the faces of this mesh according to each material.
+
+                    <doc.image src="DocumentationFiles/images/12">
+                        Each box represents a GameObject containing the Mesh Filter + Mesh Renderer.
+                        <br>
+                        Green boxes use material A, blue boxes use material B and brown boxes use material C.
+                    </doc.image>
+
+                    After separating each mesh, it creates a new GameObject. This new GameObject will group the new meshes resulting from the merge.
+
+                    <doc.image src="DocumentationFiles/images/13"></doc.image>
+
+                    Then after that, the Easy Mesh Combiner will combine all the meshes and submeshes that share the same material, and insert all into a one mesh inside the GameObject created in past step.
+
+                    <doc.image src="DocumentationFiles/images/14"></doc.image>
+
+                    And finally, the Easy Mesh Combiner simply disables the old meshes (if you selected this in <doc.detach>After Combine</doc.detach>).
+
+                    <doc.image src="DocumentationFiles/images/15"></doc.image>
+
+                    <doc.topicsubtitle>Pros Of "One Mesh Per Material" Merge Method</doc.topicsubtitle>
+                    <doc.list>
+                        <doc.listr>It is the most optimized and fastest merge method</doc.listr>
+                        <doc.listr>Does not modify any texture, material or UV</doc.listr>
+                        <doc.listr>Can combine meshes that use any type of materials</doc.listr>
+                        <doc.listr>It is the simplest method of merge</doc.listr>
+                        <doc.listr>The lower the amount of materials, the greater the reduction of draw calls</doc.listr>
+                        <doc.listr>Fully compatible with mipmaps</doc.listr>
+                        <doc.listr>You do not need "Read/Write enabled" permissions in the textures/models import settings</doc.listr>
+                        <doc.listr>It is compatible with all types of meshes!</doc.listr>
+                        <doc.listr>It is compatible with Normal Maps, Height Maps and other types of effects.</doc.listr>
+                        <doc.listr>Maintains full control over the properties of all original materials, as the original materials will still be used in combined meshes that use the same material</doc.listr>
+                    </doc.list>
+
+                    <doc.topicsubtitle>Cons Of "One Mesh Per Material" Merge Method</doc.topicsubtitle>
+                    <doc.list>
+                        <doc.listr>It is not always possible to reduce Draw Calls too much</doc.listr>
+                    </doc.list>
+
+                </doc.topic>
+                <!-- #endregion -->
+
+                <!-- #region Mesh Combiner Tool: About the Merge Method "All In One" -->
+                <doc.topic topicid="8">
+                    <doc.topictitle>Mesh Combiner Tool: About the Merge Method "All In One"</doc.topictitle>
+
+                    Briefly speaking, the "All In One" method will merge all meshes into one, and only one new mesh will be generated that will be the junction of all the others. Then it will merge all the textures into one atlas, and will
+                    insert that atlas into a new material. At the end, this material will be inserted into the unique mesh.
+                    <br>
+                    <br>
+                    With this merge method, if you have 5 meshes, only 1 mesh, 1 material and 1 atlas will remain after the merge. This method is a bit more complex, so try to understand well how it works before using it.
+                    <doc.warn>
+                        Some rare meshes can offer problems for this method, according to the way in which they were created. For example, some meshes may contain errors in your UV map, which can generate errors during the merge, however,
+                        the vast majority of the tested meshes did not result in errors during the merge and everything worked perfectly in tests!
+                    </doc.warn>
+                    First, it merges all the meshes together, creating a new mesh that is the junction of all. However, this new mesh does not have any material.
+
+                    <doc.image src="DocumentationFiles/images/16"></doc.image>
+
+                    After you provide a custom material (<doc.detach>Material To Use</doc.detach>), the Easy Mesh Combiner will copy your material when creating the new material. This new created material will be inserted into the
+                    created mesh.
+
+                    <doc.image src="DocumentationFiles/images/17"></doc.image>
+
+                    After this, the Easy Mesh Combiner will extract the texture of each old mesh and will create an atlas texture. It will create atlas textures according to your preferences, being able to create atlas with textures,
+                    normal maps, occlusion maps and etc. You can even set a maximum texture limit for each Atlas, so if that limit is exceeded, the mesh can have more than 1 Atlas. This will help to maintain a better quality of the textures
+                    present in the Atlas, to prevent them from being too small to fit more textures.
+
+                    <doc.image src="DocumentationFiles/images/18"></doc.image>
+
+                    Then the created mesh will have its UVs modified so that it can receive the new atlas. Then the atlas is inserted into the new mesh created.
+
+                    <doc.image src="DocumentationFiles/images/19"></doc.image>
+
+                    Finally, old meshes are disabled (if you selected this in <doc.detach>After Combine</doc.detach>). Resting only the mesh created with its material and texture with atlas.
+
+                    <doc.image src="DocumentationFiles/images/20"></doc.image>
+
+                    <doc.topicsubtitle>Pros Of "All In One" Merge Method</doc.topicsubtitle>
+                    <doc.list>
+                        <doc.listr>Most of the time, it dramatically reduces the amount of draw calls</doc.listr>
+                        <doc.listr>When you combine compatible meshes with this method, it returns optimum performance</doc.listr>
+                        <doc.listr>It can work with effects like Normal Maps, Height Maps and the like.</doc.listr>
+                        <doc.listr>It also supports effects such as Normal Maps, Height Maps and etc.</doc.listr>
+                    </doc.list>
+
+                    <doc.topicsubtitle>Cons Of "All In One" Merge Method</doc.topicsubtitle>
+                    <doc.list>
+                        <doc.listr>It has a longer processing time, depending on the size of the textures, amount of meshes and vertices.</doc.listr>
+                        <doc.listr>You need to enable the "Read/Write enabled" option for all model/textures in the import settings.</doc.listr>
+                        <doc.listr>Always be tested so you know if you will get a desired result</doc.listr>
+                    </doc.list>
+
+                </doc.topic>
+                <!-- #endregion -->
+
+                <!-- #region Mesh Combiner Tool: About the Merge Method "Just Material Colors" -->
+                <doc.topic topicid="9">
+                    <doc.topictitle>Mesh Combiner Tool: About the Merge Method "Just Material Colors"</doc.topictitle>
+
+                    The "Just Material Colors" merge method only merges the colors of the materials in your meshes. To do this, it collects the color of each material that its meshes use, creates an atlas that contains a palette of colors
+                    for each mesh that was merged, then color that mesh with its respective color. It is a very simple merge method and made for people who need to merge their models that do not use textures, just material colors!
+                    <br>
+                    <br>
+                    First, it merges all the meshes together, creating a new mesh that is the junction of all. However, this new mesh does not have any material.
+
+                    <doc.image src="DocumentationFiles/images/21"></doc.image>
+
+                    Then a new material is created from the material you provide (<doc.detach>Material To Use</doc.detach>). This new created material will be inserted into the created mesh.
+
+                    <doc.image src="DocumentationFiles/images/22"></doc.image>
+
+                    After this, the Easy Mesh Combiner extracts the color of each material that its meshes use, and inserts those colors into an atlas.
+
+                    <doc.image src="DocumentationFiles/images/23"></doc.image>
+
+                    Then the created mesh will have its UVs modified so that it can receive the new atlas. Then the atlas is inserted into the new mesh created.
+
+                    <doc.image src="DocumentationFiles/images/24"></doc.image>
+
+                    Finally, old meshes are disabled (if you selected this in <doc.detach>After Combine</doc.detach>). Resting only the mesh created with its material and texture with atlas.
+
+                    <doc.image src="DocumentationFiles/images/25"></doc.image>
+
+                    <doc.topicsubtitle>Pros Of "Just Material Colors" Merge Method</doc.topicsubtitle>
+                    <doc.list>
+                        <doc.listr>Most of the time, it dramatically reduces the amount of draw calls</doc.listr>
+                        <doc.listr>Always reduce calls to 1 draw call, regardless of how many meshes you have</doc.listr>
+                        <doc.listr>Perfect for combining just the colors of your model, no need for textures.</doc.listr>
+                        <doc.listr>It is optimized and fastest merge method.</doc.listr>
+                        <doc.listr>It is the simplest method of merge</doc.listr>
+                        <doc.listr>You do not need "Read/Write enabled" permissions in the textures import settings</doc.listr>
+                        <doc.listr>It is compatible with all types of meshes!</doc.listr>
+                    </doc.list>
+
+                    <doc.topicsubtitle>Cons Of "Just Material Colors" Merge Method</doc.topicsubtitle>
+                    <doc.list>
+                        <doc.listr>This merge method works only with material colors. Any kind of texture is simply ignored.</doc.listr>
+                        <doc.listr>It does not support special effects like Normal Maps and the like.</doc.listr>
+                    </doc.list>
+
+                </doc.topic>
+                <!-- #endregion -->
+
+                <!-- #region Mesh Combiner Tool: Using additional effects like Normal Maps, Height Maps, and more -->
+                <doc.topic topicid="10">
+                    <doc.topictitle>Mesh Combiner Tool: Using additional effects like Normal Maps, Height Maps, and more</doc.topictitle>
+
+                    It is very simple to process and combine the maps of your models too, using the Easy Mesh Combiner! See below how to include the maps of your models (Normal Map, Height Maps and etc.) in your merges too!
+                    <br>
+                    <br>
+                    <b>One Mesh Per Material:</b> The "One Mesh Per Material" method can merge your meshes with special effects automatically without any problem, plus you will not have to configure anything other than your own shaders.
+                    <br>
+                    <br>
+                    <b>Just Material Colors:</b> The "Just Material Colors" method is designed to support only material colors, so it does not support texture merging or special effects.
+                    <br>
+                    <br>
+                    <b>All In One:</b> "All In One" supports special effects of your materials! You just need to enable support and configure it. After that, just merge! See below how to do the procedure.
+                    <br>
+                    <br>
+                    <b>Step 1 -</b> First, activate support for the effect you want. When you activate support for an effect, the Easy Mesh Combiner, in addition to creating an atlas for your model's textures, it will also create an
+                    atlas with the textures of the effect you want. This atlas will be based on the texture atlas of your model.
+
+                    <doc.image src="DocumentationFiles/images/26"></doc.image>
+
+                    <b>Step 2 -</b> Select the property of your model materials, which store the Texture/Map of the desired effect! This is how the Easy Mesh Combiner will know where to look for the textures of the effect that you also want
+                    to apply, to combine them!
+
+                    <doc.image src="DocumentationFiles/images/27"></doc.image>
+
+                    <b>Step 3 -</b> Select the material property you provided <doc.detach>Material To Use</doc.detach> to store the atlas of the desired effect. In this case, the <doc.detach>_BumpMap</doc.detach> property of the material I
+                    supplied (my material is a Standard) will be responsible for storing the Normal Map atlas that the Easy Mesh Combiner generates.
+
+                    <doc.image src="DocumentationFiles/images/28"></doc.image>
+
+                    <b>Property Name To Find:</b> It is nothing more than the name of the variable that stores the textures of the desired effect in its materials. For example, if you have enabled Normal Maps support, the Easy Mesh
+                    Combiner will look for the variable <doc.detach>_BumpMap</doc.detach> in each shader of each material in your mesh, when the Easy Mesh Combiner finds this variable it will extract the texture of Normal Map of the
+                    variable. When it has all the normal map textures, it will merge them into an atlas.
+                    <br>
+                    <br>
+                    <b>Property Name To Insert:</b> It is the variable that will store the atlas texture of normal maps, in the final material. For example, at the end of the merge, the Easy Mesh Combiner will look for the variable
+                    <doc.detach>_BumpMap</doc.detach> in the final material and will insert the normal maps atlas in this variable.
+
+                </doc.topic>
+                <!-- #endregion -->
+
+                <!-- #region Mesh Combiner Tool: Warning before using EMC with HDRP, URP or Custom Shaders -->
+                <doc.topic topicid="11">
+                    <doc.topictitle>Mesh Combiner Tool: Warning before using EMC with HDRP, URP or Custom Shaders</doc.topictitle>
+
+                    URP, LWRP and HDRP (rendering pipelines) have new default property names in the shaders. For example, in the Built-In pipeline (Unity default) the default name of the property that stores your meshes textures is
+                    <doc.detach>_MainTex</doc.detach>, however, in HDRP and URP this default name has been changed to <doc.detach>_BaseMap</doc.detach>. Therefore, if you use HDRP, URP shaders or different shaders (created by third parties
+                    for example), you can change the properties where the EMC seeks the textures. To do this, deselect the option <doc.detach>Default Main Tex. Prop.</doc.detach>, Doing so the Easy Mesh Combiner will allow you to change
+                    the default properties where the textures will be searched and applied.
+
+                    <doc.image src="DocumentationFiles/images/29"></doc.image>
+
+                </doc.topic>
+                <!-- #endregion -->
+
+                <!-- #region Mesh Combiner Tool: About the Combined Meshes Manager -->
+                <doc.topic topicid="12">
+                    <doc.topictitle>Mesh Combiner Tool: About the Combined Meshes Manager</doc.topictitle>
+
+                    The "Combined Meshes Manager" is a component automatically added by Easy Mesh Combiner, to all meshes resulting from the merge. Through this component you can manage your combined mesh. Among the functions that this
+                    component allows you, among them are: Undo your merge, export your combined mesh to an OBJ file, view files that are linked to the combined mesh, view merge information, etc.
+
+                    <doc.image src="DocumentationFiles/images/30"></doc.image>
+
+                </doc.topic>
+                <!-- #endregion -->
+
+                <!-- #region Mesh Combiner Tool: How to undo a previously made merge -->
+                <doc.topic topicid="13">
+                    <doc.topictitle>Mesh Combiner Tool: How to undo a previously made merge</doc.topictitle>
+
+                    To undo a merge that was made in the Editor, you can undo the merge with just 2 clicks. After undoing the merge, the original meshes will return to their original state. To do this, follow the steps below.
+                    <br>
+                    <br>
+                    <b>Step 1 -</b> Click the GameObject that contains the merged meshes.
+
+                    <doc.image src="DocumentationFiles/images/31">
+                        This GameObject contains the combined meshes and the "Combined Meshes Manager" component.
+                    </doc.image>
+
+                    <b>Step 2 -</b> In the Inspector, click "Undo And Delete This Merge!".
+
+                    <doc.image src="DocumentationFiles/images/32">
+                        That's it! Undoing a merge will restore all original GameObjects to their original state at the time the merge was performed. If your combined mesh is a prefab, don't worry, copies of this prefab will not be
+                        affected.
+                    </doc.image>
+
+                </doc.topic>
+                <!-- #endregion -->
+
+                <!-- #region Mesh Combiner Tool: Current Limitations -->
+                <doc.topic topicid="14">
+                    <doc.topictitle>Mesh Combiner Tool: Current Limitations</doc.topictitle>
+
+                    See the current limitations of the Easy Mesh Combiner.
+                    <br>
+                    <br>
+                    <b>64,000 vertices limit (per mesh) for generate lightmap of this mesh</b>
+                    <br>
+                    This is a limit of Unity. If you enabled the Lightmap support option during merge, and a mesh ends up having more than 64,000 vertices, this mesh will not support lightmaps. You can try reducing the mesh vertices count,
+                    or separating it into more parts.
+
+                </doc.topic>
+                <!-- #endregion -->
+
+                <!-- #region Runtime Mesh Combiner: How This Component Works -->
+                <doc.topic topicid="15">
+                    <doc.topictitle>Runtime Mesh Combiner: How This Component Works</doc.topictitle>
+
+                    This component is the component that allows you to combine meshes on Runtime. By default, this component always uses the "One Mesh Per Material" merge method as the other methods are not possible in Runtime. With this
+                    component, you only need to indicate which GameObjects you want to combine and then use your C# API to control it to combine meshes or to undo your mesh combinations.
+
+                    <doc.image src="DocumentationFiles/images/33"></doc.image>
+
+                </doc.topic>
+                <!-- #endregion -->
+
+                <!-- #region Runtime Mesh Combiner: Explaining the Interface -->
+                <doc.topic topicid="16">
+                    <doc.topictitle>Runtime Mesh Combiner: Explaining the Interface</doc.topictitle>
+
+                    In this topic, the interface of the "Runtime Mesh Combiner" component will be explained.
+
+                    <doc.topicsubtitle>The "Preferences" and "Target Meshes"</doc.topicsubtitle>
+
+                    <b>Preferences -</b> In preferences you can define parameters for the merge you do.
+                    <br>
+                    <br>
+                    <b>Target Meshes -</b> This is a list, and you can define all the target GameObjects in which you want to combine them.
+
+                    <doc.image src="DocumentationFiles/images/34"></doc.image>
+
+                    <doc.topicsubtitle>The "Merge Events" and "Debug"</doc.topicsubtitle>
+
+                    <b>Merge Events -</b> Here you can register your own C# methods to be called whenever a merge is made or undone on this component.
+                    <br>
+                    <br>
+                    <b>Debug -</b> Here you can consult variables to debug your merges.
+
+                    <doc.image src="DocumentationFiles/images/35"></doc.image>
+
+                </doc.topic>
+                <!-- #endregion -->
+
+                <!-- #region Runtime Mesh Combiner: Settings And Options -->
+                <doc.topic topicid="17">
+                    <doc.topictitle>Runtime Mesh Combiner: Settings And Options</doc.topictitle>
+
+                    Now see a table that contains all the settings, explanations and their corresponding variables, which can be changed in realtime.
+                    <br>
+                    In the Editor Inspector, you can also always hover over a variable name, to see a detailed description of what the variable does.
+
+                    <doc.table>
+                        <doc.tablec>Name=>Variable=>Description</doc.tablec>
+                        <doc.tablecw>20%=>20%=>auto</doc.tablecw>
+                        <doc.tabler>After Combine=>afterMerge=>What should the Easy Mesh Combiner do after matching? If you choose Disable Original Meshes, only the original meshes will be disabled, keeping all other components (such as collisors and etc), so you do not waste time having to modify your scene. If you choose "Disable Original GameObjects", the oringinal GameObjects will be disabled.</doc.tabler>
+                        <doc.tabler>Add Mesh Collider After=>addMeshColliderAfter=><b>[Requires <doc.detach>afterMerge</doc.detach> as true]</b><br> This parameter is only available when selecting the option to disable the original GameObjects, after merging them. As they will be disabled, consequently their colliders will also be, so if this option is enabled, Easy Mesh Combiner can automatically add a Mesh Collider to the mesh resulting from the merge.</doc.tabler>
+                        <doc.tabler>Combine On Start=>combineMeshesAtStartUp=>Should target meshes be combined at game start?</doc.tabler>
+                        <doc.tabler>Combine Childrens Too=>combineInChildren=>Does the Easy Mesh Combiner have to look for child meshes in the selected GameObjects?</doc.tabler>
+                        <doc.tabler>Combine Inactives Too=>combineInactives=>Does the Easy Mesh Combiner have to combine childrens meshes, which are disabled?</doc.tabler>
+                        <doc.tabler>Recalculate Normals=>recalculateNormals=>If this is active, the EMC will recalculate all normals from the model resulting from the merge and will not keep the original normals.</doc.tabler>
+                        <doc.tabler>Recalculate Tangents=>recalculateTangents=>If this is active, the EMC will recalculate all tangents from the model resulting from the merge and will not keep the original tangents.</doc.tabler>
+                        <doc.tabler>Optimize Resulting Mesh=>optimizeResultingMesh=>When you enable this option, the EMC will automatically optimize the mesh resulting from the merge. This option can slightly increase the mesh processing time.</doc.tabler>
+                        <doc.tabler>Run GC After Undo=>garbageCollectorAfterUndo=>If this variable is enabled, Easy Mesh Combiner will call Unity's garbage collector to get rid of unused assets after undoing a merge. This will help save memory for your game's heap, but can cause bottlenecks in your game as everything is processed.</doc.tabler>
+                        <doc.tabler>Target Meshes To Merge=>targetMeshes=>A list containing the target GameObjects to which they will have their meshes combined.</doc.tabler>
+                        <doc.tabler>On Done Merge=>onDoneMerge=>This is a event. Event that calls all registered methods to it, after combining the desired meshes with success.</doc.tabler>
+                        <doc.tabler>On Done Unmerge=>onDoneUnmerge=>Event that calls all registered methods to it, after undo merge of the desired meshes with success.</doc.tabler>
+                        <doc.tabler>Target Meshes Merged=>X=>It will show true whenever the target meshes are combined.</doc.tabler>
+                        <doc.tabler>Show Debug Logs=>showDebugLogs=>Check this option to have the Runtime Combiner display information about GameObjects processed during the merge. This makes debugging easier. While testing GameObjects being merged, leave this box enabled.</doc.tabler>
+                    </doc.table>
+
+                </doc.topic>
+                <!-- #endregion -->
+
+                <!-- #region Runtime Mesh Combiner: Runtime API -->
+                <doc.topic topicid="18">
+                    <doc.topictitle>Runtime Mesh Combiner: Runtime API</doc.topictitle>
+
+                    See now the complete C# API for Runtime Mesh Combiner component.
+
+                    <doc.code language="csharp"><code>
+using MTAssets.EasyMeshCombiner;
+
+public RuntimeMeshCombiner someRMeshCombiner;
+                        
+void Start()
+{
+    //- isTargetMeshesMerged();
+    //  Return true if target meshes is currently combined.
+    bool isCombined = someRMeshCombiner.isTargetMeshesMerged();
+
+    //- CombineMeshes();
+    //  Commands the Runtime Mesh Combiner component to make a merge. (If there is no merge already done)
+    someRMeshCombiner.CombineMeshes();
+
+    //- UndoMerge();
+    //  Commands the Runtime Mesh Combiner component to undo a merge. (If there is merge already done)
+    someRMeshCombiner.UndoMerge();
+}
+                    </code></doc.code>
+
+                </doc.topic>
+                <!-- #endregion -->
+
+                <!-- #region Runtime Mesh Combiner: Example Code To Combine Meshes In Runtime -->
+                <doc.topic topicid="19">
+                    <doc.topictitle>Runtime Mesh Combiner: Example Code To Combine Meshes In Runtime</doc.topictitle>
+
+                    Below you can see an example code. You can use this code snippet as a basis for doing your blends using the Runtime Mesh Combiner. It's very simple!
+
+                    <doc.code language="csharp"><code>
+using MTAssets.EasyMeshCombiner;
+
+public GameObject[] arrayOfGameObjectsToMerge;
+public RuntimeMeshCombiner someRMeshCombiner;
+                        
+void Start()
+{
+    //Fill the list of Target Meshes of Runtime Mesh Combiner
+    foreach (GameObject obj in arrayOfGameObjectsToMerge)
+    someRMeshCombiner.targetMeshes.Add(obj);
+        
+    //Set some preferences of merge
+    someRMeshCombiner.afterMerge = RuntimeMeshCombiner.AfterMerge.DisableOriginalMeshes;
+    someRMeshCombiner.combineInChildren = true;
+        
+    //Finally, start the merge
+    if (someRMeshCombiner.isTargetMeshesMerged() == false)
+        someRMeshCombiner.CombineMeshes();
+        
+    //To undo the merge we use
+    if (someRMeshCombiner.isTargetMeshesMerged() == true)
+        someRMeshCombiner.UndoMerge();
+}
+                    </code></doc.code>
+
+                </doc.topic>
+                <!-- #endregion -->
+
+                <!-- #region Incredible Tips That Can Be Useful: Avoid differences in positioning of Normal Maps and other Maps in the mesh resulting from the merge -->
+                <doc.topic topicid="20">
+                    <doc.topictitle>Incredible Tips That Can Be Useful: Avoid differences in positioning of Normal Maps and other Maps in the mesh resulting from the merge</doc.topictitle>
+
+                    If you have Textures and Normal Maps (or other types of maps like Occlusion) and are trying to combine using the "All In One" method and your Textures have different and varied resolutions, you can end up with situations
+                    where Normal Map for example, looks like be positioned incorrectly. As in the example below.
+
+                    <doc.image src="DocumentationFiles/images/36">
+                        Note that after performing the merge, the normal map seemed more "expanded".
+                    </doc.image>
+
+                    This happened because the Textures have a lower resolution than the Normal Map textures. The textures are 256x256 while the normal maps are 512x512. So Normal maps end up being positioned only in the center of the
+                    texture and there are still some parts of Normal Maps left.
+
+                    <doc.image src="DocumentationFiles/images/37">
+                        Due to the fact that Normal Map is larger than the texture itself, it ends up being poorly positioned over the texture
+                    </doc.image>
+
+                    To correct this problem leave ALL the Textures and Maps of all meshes that will be merged, in uniform resolutions. In my example model, I fixed this problem by simply resizing all Textures, Normal Maps, Occlusion Maps
+                    and etc. to the uniform size of 512x512. So in the atlas, all textures will be the same size and the positioning will be perfect!
+
+                    <doc.image src="DocumentationFiles/images/38"></doc.image>
+
+                </doc.topic>
+                <!-- #endregion -->
+
+                <!-- #region Incredible Tips That Can Be Useful: Edges Mip Map Size Tip -->
+                <doc.topic topicid="21">
+                    <doc.topictitle>Incredible Tips That Can Be Useful: Edges Mip Map Size Tip</doc.topictitle>
+
+                    The edges in each texture of an atlas avoid distortions by mip maps, when the camera moves away from the 3D model, or remains at certain angles. The larger the border of each texture, the less chance of artifacts
+                    appearing. With EMC you have complete freedom to select the size of the borders you want to use in the textures of your atlases, and if you are noticing artifacts in your models, just increase the size of the borders.
+                    However, it is important that you never use borders larger than the textures resolutions themselves, because, in addition to increasing the time it takes to create the borders, you will also cause the texture to lose A
+                    LOT of quality.
+
+                </doc.topic>
+                <!-- #endregion -->
+
+                <!-- #region Incredible Tips That Can Be Useful: How to Create Prefabs With EMC -->
+                <doc.topic topicid="22">
+                    <doc.topictitle>Incredible Tips That Can Be Useful: How to Create Prefabs With EMC</doc.topictitle>
+
+                    You can easily create prefabs using the Easy Mesh Combiner. You can simply activate the <doc.detach>Save Prefab Of This</doc.detach> option or follow the steps below.
+                    <br>
+                    <br>
+                    <b>Step 1 -</b> Activate <doc.detach>Save Prefab Of This</doc.detach> and name the prefab that will be generated. This is the main way, and the recommended way, to generate prefabs from the merge mesh.
+
+                    <doc.image src="DocumentationFiles/images/39">
+                        The prefab file will be saved to your project files and the combined mesh manager will still have power over it, as well as managing them normally.
+                    </doc.image>
+
+                </doc.topic>
+                <!-- #endregion -->
+
+                <!-- #region Problems solution: Mesh Filter or Mesh Renderer component missing -->
+                <doc.topic topicid="23">
+                    <doc.topictitle>Problems solution: Mesh Filter or Mesh Renderer component missing</doc.topictitle>
+
+                    This problem occurs when a GameObject only has 1 of these two components. For Easy Mesh Combiner to consider a valid mesh, GameObject must have both Mesh Filter and Mesh Renderer. Use the Combiner Tool to see which
+                    GameObject is causing this error and correct it.
+
+                </doc.topic>
+                <!-- #endregion -->
+
+                <!-- #region Problems solution: Mesh Filter component missing -->
+                <doc.topic topicid="24">
+                    <doc.topictitle>Problems solution: Mesh Filter component missing</doc.topictitle>
+
+                    This problem occurs when a GameObject does not have the Mesh Filter component. Use the Combiner Tool to detect which GameObject is faulty and correct.
+
+                </doc.topic>
+                <!-- #endregion -->
+
+                <!-- #region Problems solution: Mesh Renderer component missing -->
+                <doc.topic topicid="25">
+                    <doc.topictitle>Problems solution: Mesh Renderer component missing</doc.topictitle>
+
+                    This problem occurs when a GameObject does not have the Mesh Renderer component. Use the Combiner Tool to detect which GameObject is faulty and correct.
+
+                </doc.topic>
+                <!-- #endregion -->
+
+                <!-- #region Problems solution: Have null mesh in Mesh Filter -->
+                <doc.topic topicid="26">
+                    <doc.topictitle>Problems solution: Have null mesh in Mesh Filter</doc.topictitle>
+
+                    This problem occurs when the Mesh Filter component has no mesh associated with it. To resolve, associate a mesh with the component, or de-select the GameObject.
+
+                </doc.topic>
+                <!-- #endregion -->
+
+                <!-- #region Problems solution: There are insufficient materials, or in excess -->
+                <doc.topic topicid="27">
+                    <doc.topictitle>Problems solution: There are insufficient materials, or in excess</doc.topictitle>
+
+                    Make sure there is 1 material for each submesh of your mesh. A mesh that uses more than 1 material, has submeshes. For example, if a mesh has 2 materials, it has 2 submeshes. But if you provide less materials than this
+                    mesh requires, some parts of the mesh will not be visible. If you supply more materials than this mesh needs, Unity will show you a warning. Easy Mesh Combiner requires that all meshes have the same amount of material
+                    for the same amount of submeshes.
+
+                </doc.topic>
+                <!-- #endregion -->
+
+                <!-- #region Problems solution: Have null materials in Mesh Renderer -->
+                <doc.topic topicid="28">
+                    <doc.topictitle>Problems solution: Have null materials in Mesh Renderer</doc.topictitle>
+
+                    To resolve this problem, only associate materials with all material slots in Mesh Renderer.
+
+                </doc.topic>
+                <!-- #endregion -->
+
+                <!-- #region Problems solution: Assertion failed: Assertion failed on expression: 'count <= std::numeric_limits::max()'... -->
+                <doc.topic topicid="29">
+                    <doc.topictitle>Problems solution: Assertion failed: Assertion failed on expression: 'count &lt= std::numeric_limits::max()'...</doc.topictitle>
+
+                    This problem occurs when you try to combine multiple meshes, where each of these meshes has many materials and many vertices. This is due to a limitation of Unity and you can work around this by using a model
+                    editor (such as Blender, Maya, Cinema 4D and others) to reduce the amount of materials that the mesh uses.
+
+                </doc.topic>
+                <!-- #endregion -->
+
+                <!-- #region Problems solution: SetPerIndexUVs failed because the output has >64K vertices -->
+                <doc.topic topicid="30">
+                    <doc.topictitle>Problems solution: SetPerIndexUVs failed because the output has >64K vertices</doc.topictitle>
+
+                    This error happens when you enable Lightmap support during merge. For example: If a merged mesh without lightmap support has only 5,000 vertices, and you enable support for lightmaps, this mesh will have 10,000 vertices.
+                    So if during conversion to lightmap support, the mesh have more than 64,000 vertices, the lightmap support for that mesh is canceled. This is a limitation of Unity. The only ways to avoid this limitation are to reduce
+                    the amount of vertices of the objects to be merged, or merge fewer meshes at once, creating more parts of the merged mesh.
+
+                </doc.topic>
+                <!-- #endregion -->
+
+                <!-- #region Problems solution: Runtime Merge Error "Cannot combine mesh that does not allow access: MeshName..." -->
+                <doc.topic topicid="31">
+                    <doc.topictitle>Problems solution: Runtime Merge Error "Cannot combine mesh that does not allow access: MeshName..."</doc.topictitle>
+
+                    This error appears when you try to combine meshes at runtime, but the meshes are not marked "Read/Write Enabled" in the import settings. To correct this error, activate the option "Read/Write Enabled" in your meshes and
+                    then click "Apply". After that it will be possible to read these meshes and combine them at runtime!
+
+                    <doc.image src="DocumentationFiles/images/40">
+                        Fixing
+                    </doc.image>
+
+                </doc.topic>
+                <!-- #endregion -->
+
+                <!-- #region Problems solution: Why isn't my atlas completely filled with my Models textures? -->
+                <doc.topic topicid="32">
+                    <doc.topictitle>Problems solution: Why isn't my atlas completely filled with my Models textures?</doc.topictitle>
+
+                    It is not always possible for textures to completely fill the atlas, even if they are perfect squares. Textures must have edges (as if they were tiled) in order to be able to support mipmaps with atlas. These borders
+                    increase the size of the textures and often make them no longer perfect squares. Another factor is the varying size of the textures or even the spacing between each texture in the atlas (which can be configured in the
+                    Easy Mesh Combiner). But these are some of the factors that make it not always possible for textures to completely fill the atlas.
+
+                </doc.topic>
+                <!-- #endregion -->
+
+                <!-- #region Problems solution: Why did the Verts/Tris count increase in my scene after merging? -->
+                <doc.topic topicid="33">
+                    <doc.topictitle>Problems solution: Why did the Verts/Tris count increase in my scene after merging?</doc.topictitle>
+
+                    In some cases, after combining the meshes in your scene, you may notice a slight increase in the vertex count when compared to uncombined meshes, which is normal, as Unity renders the entire mesh, even if not all of its
+                    parts are being seen. As long as only a part of the mesh is being viewed, the entire mesh is rendered, which contributes to increasing the vertex count currently being viewed. This is generally not a problem, however, if
+                    you are seeing BIG increases in vertices after merging, it may indicate that your mesh resulting from the merging is VERY large, and so even if the player sees only a piece of that combined mesh, the whole it is
+                    rendered. To solve this, you can try to combine your meshes through groups, instead of combining a large area of ​​your scene in just 1 mesh. An example of this is, if you have a scene of 1000 meters, try to combine the
+                    meshes in groups of 100 or 200 meshes, and each group will only contain the closest meshes. Thus, if a camera sees a piece of the combined mesh only, only the group being viewed will be rendered by Unity. You can also
+                    use an LOD system like the <a href="https://assetstore.unity.com/packages/tools/utilities/ultimate-lod-system-mt-170425" target="_blank">Ultimate LOD System MT</a> to generate smaller vertices versions of your combined
+                    mesh, all by the Editor and automatically!
+
+                </doc.topic>
+                <!-- #endregion -->
+
+                <!-- #region Problems Solution: After combining your meshes using the "All In One" method, did the atlas texture become distorted? -->
+                <doc.topic topicid="33a">
+                    <doc.topictitle>Problems Solution: After combining your meshes using the "All In One" method, did the atlas texture become distorted?</doc.topictitle>
+
+                    See an example of distorted texture...
+
+                    <doc.image src="DocumentationFiles/images/41"></doc.image>
+
+                    Although this is rare, texture distortions, after merging, can occur for several reasons. One is the architecture (that is, the way) in which the model or its UV was created, which can make it difficult to merge and
+                    insert textures in an atlas. Unity or Easy Mesh Combiner configurations, etc.
+                    <br>
+                    <br>
+                    <b>Optimize Mesh -</b> In Import Settings of yours models. Make sure your models does not have the <doc.detach>Optimize Mesh</doc.detach> option disabled. In some cases, depending on how the models was created, disabling
+                    this option may completely deform the atlas texture when the Easy Mesh Combiner will map it.
+
+                    <doc.image src="DocumentationFiles/images/42"></doc.image>
+
+                    <b>Normal maps -</b> In Import Settings of your normal map textures. Make sure your normal map textures is marked as Normal Map. Easy Mesh Combiner has normal map texture optimization algorithms and if your normal map
+                    textures are not checked, this can confuse the Easy Mesh Combiner.
+
+                    <doc.image src="DocumentationFiles/images/43"></doc.image>
+
+                </doc.topic>
+                <!-- #endregion -->
+
+                <!-- #region Demo Scene -->
+                <doc.topic topicid="34">
+                    <doc.topictitle>Demo Scene</doc.topictitle>
+
+                    The Easy Mesh Combiner has some demonstration scenes, in which you can see up close, examples that show how the Easy Mesh Combiner works, for example, use in Runtime or Editor, use of the other
+                    components and etc. The demo scenes start with the prefix "DemoScene".
+                </doc.topic>
+                <!-- #endregion -->
+
+                <!-- #region Contact and Support -->
+                <doc.topic topicid="35">
+                    <doc.topictitle>Contact and Support</doc.topictitle>
+
+                    <center>
+                        <font style="font-size: 18px; color: #00771d;">mtassets@windsoft.xyz</font>
+                    </center>
+                    <br>
+                    <doc.achiev>
+                        Congratulations, you have reached the end of the documentation! Thanks for reading!
+                        <br>
+                        <br>
+                        If you need to contact me for any difficulty, feature suggestion, bug fix, question or support, just contact me through my email above!
+                    </doc.achiev>
+                </doc.topic>
+                <!-- #endregion -->
+
+                <!-- --------------------------------------------------------------------------- END OF DOCUMENTATION CONTENT --------------------------------------------------------------------------- -->
+            </div>
+        </div>
+
+        <div class="endOfBodyContentPoint" id="contentEndPoint"></div>
+        <!-- #region FOOTER -->
+        <div class="footer">
+            <center>
+                <small>
+                    <b>Developed with ❤ by Marcos Tomaz (MT Assets)</b>
+                    <br>
+                    <div class="processingTimeResult">
+                        Page processed in <div id="processingTime">0</div> ms
+                    </div>
+                    <br>
+                    <a href="https://assetstore.unity.com/publishers/40306" target="_blank">See More Assets From MT Assets</a>
+                    •
+                    <a href="https://windsoft.xyz/mtassets" target="_blank">MT Assets Website</a>
+                    •
+                    <a href="https://www.youtube.com/channel/UCqAgiYBwAWajjFUqyJ6_xyw" target="_blank">MT Assets On YouTube</a>
+
+
+                    <div style="display: inline; margin-left: 8px; margin-right: 8px;">|</div>
+                    <a href="https://github.com/marcos4503/documentation-template" target="_blank">
+                        <div style="display: inline;"><img src="DocumentationFiles/footer/github" style="width: 14px; height: 14px; border-radius: 14px; transform: translateY(2px);"></div> See This Documentation Template On GitHub!
+                    </a>
+                </small>
+            </center>
+        </div>
+        <div class="footerSpacement"></div>
+        <div class="gotoTopButton" id="gotoTopButtonItem" onclick="GoToToButton();"><img src="DocumentationFiles/tools/up.webp" title="Click here to go to top of page." /></div>
+        <!-- #endregion -->
+    </body>
+
+</html>

@@ -1,0 +1,110 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: vgl01_hair_R
+  m_Shader: {fileID: 4800000, guid: 77960fe33e11ed443a3c6ccb8e423f11, type: 3}
+  m_ShaderKeywords: DROPSHADOW HILIGHT_ENABLED
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: 2000
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _BaseTex:
+        m_Texture: {fileID: 2800000, guid: 0c077c88cdc6dc14abb20a5398942d04, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _HilightmapTex:
+        m_Texture: {fileID: 2800000, guid: fe7b04923598ecd45b479604457b2b80, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _ShadowTex:
+        m_Texture: {fileID: 2800000, guid: c0a40096e474a6643b0e514e351b93b1, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _ShadowmapTex:
+        m_Texture: {fileID: 2800000, guid: b4510d1352b6dd542ab8edb0b2d84ff2, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _SystemShadowColorTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _ToonHilightTex:
+        m_Texture: {fileID: 2800000, guid: 4a9a05fb92c63c043a4bc98fad57ad52, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _ToonTex:
+        m_Texture: {fileID: 2800000, guid: 5dbfb6b5ea11d6541883612984ca4a18, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats:
+    - _AddLightAffect: 1
+    - _AddSystemShadowAffect: 0.75
+    - _AlphaToMask: 0
+    - _AmbientLightColor: 1
+    - _AmbientTilt: 0.7
+    - _BCmixMethod: 0
+    - _BaseTexMix: 0
+    - _ColorMask: 15
+    - _CullMode: 2
+    - _Cutoff: 0.5
+    - _DstBlend: 0
+    - _EdgeThickness: 1.5
+    - _HandleShadow: 1
+    - _HilightHardness: 1
+    - _HilightIntensity: 0.7
+    - _HilightPower: 0
+    - _HilightSpread: 0
+    - _IsBaseColor: 0
+    - _IsHilightColor: 0
+    - _IsShadowColor: 0
+    - _IsSystemShadowColor: 1
+    - _LightingDir: 0.9
+    - _MainLightAffect: 1
+    - _NormalSpherical: 0
+    - _ReadMask: 255
+    - _RefV: 1
+    - _SCmixMethod: 0
+    - _SaturatedValue: 1.1
+    - _ShadowAffect: 1
+    - _ShadowHilightIntensity: 0.5
+    - _ShadowTexMix: 0
+    - _SrcBlend: 1
+    - _StencilMode: 0
+    - _SystemShadowAffect: 0.75
+    - _WriteMask: 255
+    - _ZTest: 4
+    - _ZWrite: 1
+    - _blendMode: 0
+    - _edgeMode: 1
+    - _hilightMode: 1
+    - _stComp: 8
+    - _stComp_c: 8
+    - _stFail: 0
+    - _stFail_c: 0
+    - _stPass: 0
+    - _stPass_c: 0
+    - _stZFail: 0
+    - _stZFail_c: 0
+    - _vc2edge: 1
+    m_Colors:
+    - _AnchorPoint: {r: 0, g: 0, b: 0, a: 1}
+    - _BaseColor: {r: 0.8, g: 0.8, b: 0.8, a: 1}
+    - _Color: {r: 1, g: 1, b: 1, a: 1}
+    - _EdgeColor: {r: 0.113451086, g: 0.109375, b: 0.125, a: 1}
+    - _HilightColor: {r: 1, g: 1, b: 1, a: 1}
+    - _MappingRotation: {r: 0, g: 0, b: 0, a: 1}
+    - _MappingScale: {r: 1, g: 1, b: 1, a: 1}
+    - _ShadowColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+    - _SphericalCenter: {r: 0, g: 0, b: 0, a: 1}
+    - _SystemShadowColor: {r: 0.19215685, g: 0.19215685, b: 0.36470586, a: 1}

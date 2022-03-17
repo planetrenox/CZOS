@@ -1,0 +1,69 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags:
+  - CarDeathCollider
+  - GhostV1
+  - City1Trigger
+  - City2Trigger
+  - City3Trigger
+  - City4Trigger
+  - Floor
+  - CarsGroup1
+  - CarsGroup2
+  - BusStop
+  - Music
+  - IfDisabledPreferDisablingEntireGameObject
+  - Test
+  - City1GuideSign
+  - City2GuideSign
+  - City3GuideSign
+  - City4GuideSign
+  - PanelDistance
+  - PanelTime
+  - DynamicMovable
+  - GeneralDeathCollider
+  - Intersection2City1
+  - Intersection1City1
+  - alreadyAlive
+  - Water
+  - Car
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - 
+  - Water
+  - UI
+  - 
+  - PlayerTree
+  - 
+  - 
+  - Car
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: Default
+    uniqueID: 0
+    locked: 0

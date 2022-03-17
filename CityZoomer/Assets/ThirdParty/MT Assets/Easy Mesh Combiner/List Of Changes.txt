@@ -1,0 +1,257 @@
+
+/////////////////////
+	  MT ASSETS
+	  CHANGELOG
+/////////////////////
+
+v3.0.3
+	- Now the officially supported minimum version is Unity 2019.4 or higher. Support for this version of Unity or
+	  higher will make it possible to add different new features and improvements in the future. This change also aims
+	  to ensure that the tool can always have mature, stable and continuous update support!
+	- Minor layout adjustments have been made to the Mesh Combiner Tool's UI to ensure greater perfection in the
+	  latest Unity versions.
+
+v3.0.2
+	- Added one more helpful hint to Easy Mesh Combiner documentation.
+
+v3.0.1
+	- ** WARNING: This is a major update for the Easy Mesh Combiner! Several improvements have been made and
+		 incredible new additions too! **
+	- 
+	- The documentation has been completely redone and updated as well. Now the new documentation is more modern
+	  and more beautiful, it can be found in the folder "_Documentation/Documentation.html" and you can open it
+	  directly from within your Unity Editor. If your project still has the old "Documentation.zip" file, you can
+	  delete it without any problems.
+	- Some fields that were used only for internal codes, but which were not used for external scripts, were hidden
+	  to avoid confusion.
+	- Some minor changes, optimizations and improvements have been made to the Editor UI.
+	- Some extra warnings have been added to make sure you stay on top of everything before merging!
+	- Now, after the merge is finished, Easy Mesh Combiner will display the merge processing time.
+	- The Combined Meshes Manager has been rewritten to adapt to the new functions of the Easy Mesh Combiner. He
+	  also underwent some minor optimization and UI changes.
+	- The Combined Meshes Manager UI will now adapt according to the chosen blending method and other parameters.
+	- Combined Meshes Manager now has a bulletin board to communicate with you if you encounter any problems with
+	  the merge.
+	- It will now be possible to export the Atlas generated during the merge. Through the Combined Meshes Manager.
+	- Easy Mesh Combiner now has a selection of "Combine Method". Through this selection, you can choose which
+	  Combine Method Easy Mesh Combiner will use to combine your meshes! 
+	  (If you are a user of the Skinned Mesh Combiner MT tool, you already know how it works!)
+	- New Combine Method added: One Mesh Per Material. This method of blending works identically to the way in which
+	  Easy Mesh Combiner has always worked! This is the standard Combine Method.
+	- New Combine Method added: All In One. This method of merging supports and generates Atlas from the meshes that
+	  have been selected for merging. In this merge method the Easy Mesh Combiner will combine the meshes that
+	  have Tilings (in order to preserve the quality of these meshes as much as possible) and combine the meshes that
+	  do not have Tilings, all together, generating an Atlas with various textures. You can decide how many textures
+	  an Atlas can have, if you want to have a better control of the quality that each texture will have in the Atlas.
+	  After all, only the mesh resulting from the merge will remain.
+	- New Combine Method added: Just Material Colors. This method of blending only works with meshes that use only
+	  colors in their materials, instead of textures. This blending method combines all meshes in just one mesh, then
+	  extracts the color from all materials and creates a single Atals texture that works as a color palette,
+	  containing all colors for all meshes combined. This will always optimize your meshes to generate only 1 Draw
+	  Call at all times, while still retaining their original colors of the materials.
+	- Now, when activating "Lightmaps Support", you will see a button called "Deselect Excessive". By clicking on
+	  this button, Easy Mesh Combiner will deselect any excess GameObjects.
+	- Fixed a bug that caused the vertex count to be increased after merge, in some rare cases.
+	- Fixed a bug that caused the vertex count to be increased after merge, in some rare cases (For Runtime Mesh
+	  Combiner too).
+	- New function added to be performed after performing a merge: Now, when completing a merge with Easy Mesh Combiner
+	  you can choose the option "Do Nothing" and so Easy Mesh Combiner will do absolutely nothing after performing
+	  your merge! (For Editor)
+	- New function added to be performed after performing a merge: Now, when completing a merge with Easy Mesh Combiner
+	  you can choose the option "Do Nothing" and so Easy Mesh Combiner will do absolutely nothing after performing
+	  your merge! (For Runtime Mesh Combiner too)
+
+v2.6.4
+	- Fixed some minor bugs and minor code changes.
+	- The option to Optimize the mesh resulting from the merge has been added to the combined mesh manager.
+	- An option to optimize the mesh was added to the Runtime Mesh Combiner component.
+	- Now the management buttons of the combined mesh through the Editor, send messages for each action performed.
+	- A button for quickly adding the Mesh Collider component, has been added to the combined mesh manager.
+	- The documentation has been updated to contain minor changes and additions made in this version.
+
+v2.6.3	
+	- A bug has been fixed that caused the selection gizmos not to be hidden, after closing the merge window in
+	  the Editor, without combining any mesh.
+	- The UI of the merge window in the Editor, has undergone some improvements.
+	- The options for recalculating normals and tangens have been moved from the merge window to the management
+	  component of the combined mesh, which is on the mesh resulting from the merge.
+	- Fixed a bug that caused disabled daughter meshes to still be combined, even if the "Combine Inactives"
+	  option was unchecked.
+	- The "Combined Meshes Manager" component now has an option so that it is possible to export the mesh resulting
+	  from the merge, as OBJ, so the editing of this mesh in external modeling software is made easier.
+	- Now the "Combine On Start" option of the "Runtime Mesh Combiner" has the options of "On Start" and "On Awake",
+	  for greater control of when the merging should occur.
+	- Now the GameObject that contains the mesh resulting from the merge will always be placed very close to the
+	  first selected GameObject and in addition, it will also be the child of the first selected GameObject.
+	- The component icons have been slightly updated.
+	- Now the official version of the Easy Mesh Combiner, is 2019.3.x.
+	- The documentation has been updated.
+
+v2.5.2
+	- Correction of small bugs.
+	- There's more to come, soon!
+
+v2.5.1
+	- It is now possible to disable the calculation of normals and tangents of the meshes resulting from the merging.
+	- Correction of small bugs.
+	- Documentation updated.
+
+v2.4.3
+	- Correction of small bugs.
+
+v2.4.2
+	- A bug has been fixed that caused the automatic deactivation of some scripts' Gizmos to stop working.
+	- Fixed a bug where changing Easy Mesh Combiner UI parameters did not work on some versions
+	  of Unity 2019.3.x.
+
+v2.4.1
+	- Combined Meshes Manager is now not displayed in the component list.
+	- Now the Gizmos of the RuntimeMeshCombiner and other components are no longer displayed.
+	- Now, by default, the option to launch debug logs on the console, is enabled so that in case of any
+	  runtime merging error, you know. You can always disable it if you prefer!
+	- The documentation has been updated to ensure greater clarity, volume of information, tips and minor corrections!
+	- Fixed a bug in the creation of prefabs, which affected versions newer to Unity 2018.3.
+	- Now the meshes that are disabled, will not be included in the run-time merges, even if they are in the list
+	  to merge.
+	- Easy Mesh Combiner will no longer issue merge warnings about possible problems with Lightmaps, if you 
+	  have not checked the support option for Lightmaps.
+
+v2.4.0
+	- Following the rhythm of Unity Engine versions and to guarantee the good permanent support of this asset,
+	  now the minimum recommended version is 2018.1, however, you can still use this asset in the 2017.4 LTS
+	  version if you prefer. This will allow this asset to always have the latest features and better and
+	  more effective support!
+	- Fixed a bug that caused the merging of very large meshes to suffer from distortions in the 2018.1
+	  version of Unity.
+	- Fixed a bug that caused GameObjects to be active, but with MeshFilters disabled, also be combined
+	  while selecting all meshes or a GameObject that contains all meshes in the scenario.
+	- Easy Mesh Combiner is now able to give an automatic name to the prefab you want to save.
+	- To avoid problems, Easy Mesh Combiner will now only display the combined mesh management buttons,
+	  in the original meshes and no longer in their respective prefabs.
+	- The combined mesh manager interface has undergone some changes for clarity. Now the selection of
+	  meshes combined by materials has a scrollview to make things more organized.
+
+v2.3.0
+	- In this version, some unused files have been removed from the package. For example, the demo scene
+	  materials now use standard Unity shaders. Nothing that will affect the way the EMC works.
+	- All resources, persistent asset data and other files are now saved in "MT Assets/_AssetsData".
+	  This makes it easy to manage all files generated by MT assets and if you need to remove any asset,
+	  just delete the asset folder. So, even if you want to remove some MT assets from your project, or
+	  update it, you will not lose any files or information that you would like to keep!
+
+v2.2.1
+	- Fixed a bug that caused the compilation or loading time of the scene execution to increase considerably
+	  in the editor.
+
+v2.2.0
+	- Now you no longer need to check the option of more than 64,000 vertices to combine giant meshes.
+	  Easy Mesh Combiner can automatically identify the size of the meshes and will select whether the
+	  resulting mesh will be 16 bits or 32 bits.
+
+v2.1.1
+	- Fixed a compatibility issue with Unity version 2018.1.
+
+v2.1.0
+	- This major update has brought several enhancements, feature additions, and enhancements to EMC's workflow!
+	- This update may cause your combined mesh managers of version 1.7.1 or lower to stop working as they
+	  should. Back up your project to revert changes if you prefer. The new combined mesh manager is
+	  better and smarter, read on.
+	- Minor additions to the asset menu.
+	- Improvement of some asset codes.
+	- Improvements to undo actions.
+	- Updated UI! Easy Mesh Combiner is now more intuitive and optimized for use in the Editor!
+	- Improvements in displaying merge statistics.
+	- Added merge log. Through it, you can identify problems in meshes before you merge, and also get
+	  the root of what is causing the problem.
+	- All EMC source code has been rewritten, optimized and revamped!
+	- Easy Mesh Combiner will now keep your merge preferences even if you close the editor window.
+	- Now the merge window continues to update even while it is not in focus. So you can select meshes
+	  while everything is updated automatically!
+	- Now the Easy Mesh Combiner window will remember which position you left it when you closed it.
+	- Valid GameObjects selected for merge will now be highlighted in blue. Invalid GameObjects will
+	  be highlighted in red in your scene. (Highlights only appear with the merge window open).
+	- The option to add a comment to the GameObject resulting from the merge has been removed,
+	  however, you can now choose the name of this GameObject before merging.
+	- Easy Mesh Combiner should now work smoothly on versions older than 2017.4, but mesh support
+	  with more than 65,000 vertices will not work on versions older than 2017.4.
+	- Now, when you finish a merge, only 1 new GameObject will be generated that will contain a
+	  single mesh resulting from the merge!
+	- The resulting GameObject merge will now be positioned as close as possible to the selected
+	  GameObjects to be merged into the hierarchy. The resulting GameObject from the merge will no
+	  longer appear at the end of your scene hierarchy.
+	- Several improvements made to the combined mesh manager. You now have better mesh management after the merge.
+	- Fixed a bug where previously disabled meshes are enabled when undoing a merge!
+	- Fixed a bug when importing this asset for the first time, where a file error message was displayed.
+	  It was more common with Windows 10 users.
+	- Several interface improvements.
+	- Fixing a bug that caused Unity to crash (in some versions) upon completion of a merge.
+	- Documentation updated.
+	- Added a feature so you can merge and unmerge at runtime, so you can optimize your game even
+	  as it runs, quickly and optimally!
+	- Added new sample scene to show merge at runtime.
+	- You can have a complete debug of the merge process at run time.
+	- Fixed a compatibility issue with prefab creation in the latest versions of Unity.
+	- The management of combined mesh prefabs has also been improved.
+	- Better organization of source code.
+	- There was a slight change in the asset API. Now, to access the API methods of this
+	  asset, use "using MTAssets.EasyMeshCombiner".
+	- Added function to select all original GameObjects containing X material in combined mesh
+	  manager (after merging using Editor).
+
+v1.7.1
+	- More interface improvements.
+	- Small corrections.
+	- Fix a bug with the welcome message.
+	- Small housekeeping in scripts
+	- Added an option to select all the original meshes of a merge.
+	- You can now include a comment in the GameObject resulting from the merge.
+
+v1.6.2
+	- Workflow Improvement
+	- Fixes and enhancements in the user interface
+	- Improvements in integrated materials
+	- The compatibility of the tool has been extended among more Unity versions!
+
+v1.6.1
+	- Small improvements in code.
+
+v1.6
+	- Improvements in tool interface.
+
+v1.5
+	- Your merge preferences will now persist even if the merge window is closed.
+	- Fix of small bugs.
+	- Small improvements in tool interface.
+	- Now you can save prefabs from the merge, quickly, just by activating an option before the merge!
+
+v1.4
+	- The minimum support version is now Unity 2018.1.0f2. This change was made to ensure future improvements to the tool! Stay tuned!
+	- The 65,000 vertices limit has been removed! Now you can combine your knits without worrying about this limitation!
+	- Now the tool interface shows the information you are merging.
+
+v1.3
+	- Small improvements in documentation.
+	- Improved support for lightmaps in merged meshes!
+	- Addition of explanations on the merge of meshes and generation of lightmaps in the documentation.
+
+v1.2
+	- A lot of minor improvements.
+	- Fix small bugs.
+
+v1.1
+	- Do not worry about duplicates when saving the meshes combined in your project file!
+	- If you have saved the merge files in your project files, and you want to undo the merge,
+	  all unnecessary files are also deleted from your project. So you do not worry about memory problems!
+	- The combined mesh manager now shows you a warning if it detects that one of the meshes combined
+	  does not have any important files.
+	- The documentation has been contemplated with the new details!
+
+v1.0
+	- The Easy Mesh Combiner has just been released! I will always be working to support and add new features!
+	  Do you have any suggestions, Bug reports or any problems with using this asset? Contact by email!
+	  (mtassets@windsoft.xyz)
+
+/////////////////////
+  Email for support
+mtassets@windsoft.xyz
+/////////////////////

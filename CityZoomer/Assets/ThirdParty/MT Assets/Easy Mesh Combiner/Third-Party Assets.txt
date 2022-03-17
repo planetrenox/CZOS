@@ -1,0 +1,81 @@
+
+/////////////////////
+	  MT ASSETS
+	   Credits
+/////////////////////
+
+- Fence Model
+	created by George Piskas
+	used through TurboSquid's "Royalty Free License", just as a demonstration model of the operation of this asset.
+	available in
+	https://www.turbosquid.com/FullPreview/Index.cfm/ID/600091 (Free)
+
+- Grass Model
+	created by Dultcraft Shop
+	used through TurboSquid's "Royalty Free License", just as a demonstration model of the operation of this asset.
+	available in
+	https://www.turbosquid.com/FullPreview/Index.cfm/ID/703699 (Free)
+
+- Low Poly Tree
+	created by PaulsenDesign
+	used through TurboSquid's "Royalty Free License", just as a demonstration model of the operation of this asset.
+	available in
+	https://www.turbosquid.com/FullPreview/Index.cfm/ID/961487 (Free)
+
+- Barrel
+	created by GetDeadEntertainment
+	used through TurboSquid's "Royalty Free License", just as a demonstration model of the operation of this asset.
+	available in
+	https://www.turbosquid.com/3d-models/3d-barrels-industrial-container-1685817 (Free)
+
+- Container
+	created by Sezar1
+	used through TurboSquid's "Royalty Free License", just as a demonstration model of the operation of this asset.
+	available in
+	https://www.turbosquid.com/3d-models/free-obj-mode-shipping-container/1051656 (Free)
+
+- Big Bin
+	created by SPACESCAN
+	used through TurboSquid's "Royalty Free License", just as a demonstration model of the operation of this asset.
+	available in
+	https://www.turbosquid.com/3d-models/skip-bin-3d-model-1569563 (Free)
+
+- Wooden Box
+	created by RensiCG
+	used through TurboSquid's "Royalty Free License", just as a demonstration model of the operation of this asset.
+	available in
+	https://www.turbosquid.com/3d-models/wooden-box-3d-model-1617331 (Free)
+
+- Bucket
+	created by Medbrat23
+	used through TurboSquid's "Royalty Free License", just as a demonstration model of the operation of this asset.
+	available in
+	https://www.turbosquid.com/3d-models/3d-bucket-1714572 (Free)
+
+- Trash Container
+	created by zavorad
+	used through TurboSquid's "Royalty Free License", just as a demonstration model of the operation of this asset.
+	available in
+	https://www.turbosquid.com/3d-models/trash-container-3d-model-1652950 (Free)
+
+- Explosive Barrel
+	created by HuNtEr_3DdD
+	used through TurboSquid's "Royalty Free License", just as a demonstration model of the operation of this asset.
+	available in
+	https://www.turbosquid.com/3d-models/explosive-barrel-low-poly-3d-model-1590597 (Free)
+
+
+	Please note that: All third party assets (that were not created by MT Assets) included here, are used based on
+	the license of the original authors contained in each asset link. You cannot use the third party assets included
+	in this package, if you want to use them in your creation, purchase them from each link (informed above) and
+	make sure you have permission from the author or carefully read the license that is in each link.
+
+	However, any asset in this package, which is not listed here, was created by MT Assets, and since you have purchased
+	this package, you can use them in accordance with the license contained on this package's page on the Asset Store.
+	If you have any questions about licensing or permission to use assets, do not hesitate to contact us through 
+	mtassets@windsoft.xyz
+
+/////////////////////
+  Email for support
+mtassets@windsoft.xyz
+/////////////////////

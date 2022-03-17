@@ -1,0 +1,11 @@
+Model Information:
+* title:	C7 prototype Pistol
+* source:	https://sketchfab.com/3d-models/c7-prototype-pistol-d020873f0a784f3cb2e117b65d18d28a
+* author:	BÖMSTRÖM (https://sketchfab.com/bumstrum)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "C7 prototype Pistol" (https://sketchfab.com/3d-models/c7-prototype-pistol-d020873f0a784f3cb2e117b65d18d28a) by BÖMSTRÖM (https://sketchfab.com/bumstrum) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

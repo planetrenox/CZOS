@@ -1,0 +1,8 @@
+Model Information:
+* title:	Futuristic Skyscrapers Pack
+* source:	https://sketchfab.com/3d-models/futuristic-skyscrapers-pack-07d66785c56d4a56b930e60cfadc5320
+* author:	korboleev (https://sketchfab.com/korboleevd)
+
+Model License:
+* license type:	SKETCHFAB Standard (https://sketchfab.com/licenses)
+* requirements:	Under basic restrictions, use worldwide, on all types of media, commercially or not, and in all types of derivative works

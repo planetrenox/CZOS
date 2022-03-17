@@ -1,0 +1,460 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 8
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 681c19a324475ea4489deec3e2c8f641, type: 3}
+  m_Name: SampleData
+  m_EditorClassIdentifier: 
+  _lastEdit: 
+  _is_overrideDB: 0
+  _is_replaceColliders: 1
+  _is_overrideDBC: 1
+  _dataList:
+  - _settingsName: RootObject1
+    _rootName: RootObject1
+    _armatureName: BoneRoot
+    _dbrefObjRoot: RootObject2
+    _dbNodeRoot: DynamicBoneRoot
+    _dbnodes:
+    - _name: Bone01
+      _parent: BoneRoot
+      _dbprop:
+        _root: Bone01
+        _UpdateRate: 60
+        _UpdateMode: 0
+        _Damping: 0.1
+        _DampingDistrib:
+          serializedVersion: 2
+          m_Curve: []
+          m_PreInfinity: 2
+          m_PostInfinity: 2
+          m_RotationOrder: 4
+        _Elasticity: 0.1
+        _ElasticityDistrib:
+          serializedVersion: 2
+          m_Curve: []
+          m_PreInfinity: 2
+          m_PostInfinity: 2
+          m_RotationOrder: 4
+        _Stiffness: 0.1
+        _StiffnessDistrib:
+          serializedVersion: 2
+          m_Curve: []
+          m_PreInfinity: 2
+          m_PostInfinity: 2
+          m_RotationOrder: 4
+        _Inert: 0
+        _InertDistrib:
+          serializedVersion: 2
+          m_Curve: []
+          m_PreInfinity: 2
+          m_PostInfinity: 2
+          m_RotationOrder: 4
+        _Radius: 0.1
+        _RadiusDistrib:
+          serializedVersion: 2
+          m_Curve: []
+          m_PreInfinity: 2
+          m_PostInfinity: 2
+          m_RotationOrder: 4
+        _EndLength: 1
+        _EndOffset: {x: 0, y: 0, z: 0}
+        _Gravity: {x: 0, y: 0, z: 0}
+        _Force: {x: 0, y: 0, z: 0}
+        _colliders: []
+        _Exclusions: []
+        _FreezeAxis: 0
+        _DistantDisable: 1
+        _ReferenceObject: {fileID: 0}
+        _DistanceToObject: 20
+    - _name: Bone02
+      _parent: BoneRoot
+      _dbprop:
+        _root: Bone02
+        _UpdateRate: 60
+        _UpdateMode: 0
+        _Damping: 0.1
+        _DampingDistrib:
+          serializedVersion: 2
+          m_Curve: []
+          m_PreInfinity: 2
+          m_PostInfinity: 2
+          m_RotationOrder: 4
+        _Elasticity: 0.1
+        _ElasticityDistrib:
+          serializedVersion: 2
+          m_Curve: []
+          m_PreInfinity: 2
+          m_PostInfinity: 2
+          m_RotationOrder: 4
+        _Stiffness: 0.1
+        _StiffnessDistrib:
+          serializedVersion: 2
+          m_Curve: []
+          m_PreInfinity: 2
+          m_PostInfinity: 2
+          m_RotationOrder: 4
+        _Inert: 0
+        _InertDistrib:
+          serializedVersion: 2
+          m_Curve: []
+          m_PreInfinity: 2
+          m_PostInfinity: 2
+          m_RotationOrder: 4
+        _Radius: 0.1
+        _RadiusDistrib:
+          serializedVersion: 2
+          m_Curve: []
+          m_PreInfinity: 2
+          m_PostInfinity: 2
+          m_RotationOrder: 4
+        _EndLength: 1
+        _EndOffset: {x: 0, y: 0, z: 0}
+        _Gravity: {x: 0, y: 0, z: 0}
+        _Force: {x: 0, y: 0, z: 0}
+        _colliders: []
+        _Exclusions: []
+        _FreezeAxis: 0
+        _DistantDisable: 1
+        _ReferenceObject: {fileID: 0}
+        _DistanceToObject: 20
+    _dbcnodes:
+    - _name: Collider01
+      _parent: Bone01
+      _localPosition: {x: 0, y: 0, z: 0}
+      _localRotation: {x: 0, y: 0, z: 0, w: 1}
+      _localScale: {x: 1, y: 1, z: 1}
+      _dbcprop:
+        _Direction: 1
+        _Center: {x: 0, y: 0, z: 0}
+        _Bound: 0
+        _Radius: 0.1
+        _Height: 0
+    - _name: Collider01.001
+      _parent: Collider01
+      _localPosition: {x: 0, y: 0, z: 0}
+      _localRotation: {x: -0, y: -0, z: -0, w: 1}
+      _localScale: {x: 1, y: 1, z: 1}
+      _dbcprop:
+        _Direction: 1
+        _Center: {x: 0, y: 0, z: 0}
+        _Bound: 0
+        _Radius: 0.1
+        _Height: 0
+    - _name: Collider01.002
+      _parent: Collider01.001
+      _localPosition: {x: 0, y: 0, z: 0}
+      _localRotation: {x: -0, y: -0, z: -0, w: 1}
+      _localScale: {x: 1, y: 1, z: 1}
+      _dbcprop:
+        _Direction: 1
+        _Center: {x: 0, y: 0, z: 0}
+        _Bound: 0
+        _Radius: 0.1
+        _Height: 0
+    - _name: Collider02.001
+      _parent: Bone02.001
+      _localPosition: {x: 0, y: 0, z: 0}
+      _localRotation: {x: 0, y: 0, z: 0, w: 1}
+      _localScale: {x: 1, y: 1, z: 1}
+      _dbcprop:
+        _Direction: 1
+        _Center: {x: 0, y: 0, z: 0}
+        _Bound: 0
+        _Radius: 0.1
+        _Height: 0
+    - _name: Collider02
+      _parent: Bone02
+      _localPosition: {x: 0, y: 0, z: 0}
+      _localRotation: {x: 0, y: 0, z: 0, w: 1}
+      _localScale: {x: 1, y: 1, z: 1}
+      _dbcprop:
+        _Direction: 1
+        _Center: {x: 0, y: 0, z: 0}
+        _Bound: 0
+        _Radius: 0.1
+        _Height: 0
+  - _settingsName: RootObject2
+    _rootName: RootObject2
+    _armatureName: BoneRoot
+    _dbrefObjRoot: RootObject1
+    _dbNodeRoot: BoneRoot
+    _dbnodes:
+    - _name: Bone01
+      _parent: DynamicBoneRoot
+      _dbprop:
+        _root: Bone01
+        _UpdateRate: 60
+        _UpdateMode: 0
+        _Damping: 0.1
+        _DampingDistrib:
+          serializedVersion: 2
+          m_Curve: []
+          m_PreInfinity: 2
+          m_PostInfinity: 2
+          m_RotationOrder: 4
+        _Elasticity: 0.1
+        _ElasticityDistrib:
+          serializedVersion: 2
+          m_Curve: []
+          m_PreInfinity: 2
+          m_PostInfinity: 2
+          m_RotationOrder: 4
+        _Stiffness: 0.1
+        _StiffnessDistrib:
+          serializedVersion: 2
+          m_Curve: []
+          m_PreInfinity: 2
+          m_PostInfinity: 2
+          m_RotationOrder: 4
+        _Inert: 0
+        _InertDistrib:
+          serializedVersion: 2
+          m_Curve: []
+          m_PreInfinity: 2
+          m_PostInfinity: 2
+          m_RotationOrder: 4
+        _Radius: 0.1
+        _RadiusDistrib:
+          serializedVersion: 2
+          m_Curve: []
+          m_PreInfinity: 2
+          m_PostInfinity: 2
+          m_RotationOrder: 4
+        _EndLength: 1
+        _EndOffset: {x: 0, y: 0, z: 0}
+        _Gravity: {x: 0, y: 0, z: 0}
+        _Force: {x: 0, y: 0, z: 0}
+        _colliders: []
+        _Exclusions: []
+        _FreezeAxis: 0
+        _DistantDisable: 1
+        _ReferenceObject: {fileID: 0}
+        _DistanceToObject: 20
+    - _name: Bone02
+      _parent: DynamicBoneRoot
+      _dbprop:
+        _root: Bone02
+        _UpdateRate: 60
+        _UpdateMode: 0
+        _Damping: 0.1
+        _DampingDistrib:
+          serializedVersion: 2
+          m_Curve: []
+          m_PreInfinity: 2
+          m_PostInfinity: 2
+          m_RotationOrder: 4
+        _Elasticity: 0.1
+        _ElasticityDistrib:
+          serializedVersion: 2
+          m_Curve: []
+          m_PreInfinity: 2
+          m_PostInfinity: 2
+          m_RotationOrder: 4
+        _Stiffness: 0.1
+        _StiffnessDistrib:
+          serializedVersion: 2
+          m_Curve: []
+          m_PreInfinity: 2
+          m_PostInfinity: 2
+          m_RotationOrder: 4
+        _Inert: 0
+        _InertDistrib:
+          serializedVersion: 2
+          m_Curve: []
+          m_PreInfinity: 2
+          m_PostInfinity: 2
+          m_RotationOrder: 4
+        _Radius: 0.1
+        _RadiusDistrib:
+          serializedVersion: 2
+          m_Curve: []
+          m_PreInfinity: 2
+          m_PostInfinity: 2
+          m_RotationOrder: 4
+        _EndLength: 1
+        _EndOffset: {x: 0, y: 0, z: 0}
+        _Gravity: {x: 0, y: 0, z: 0}
+        _Force: {x: 0, y: 0, z: 0}
+        _colliders:
+        - Collider01
+        - Collider01.001
+        - Collider01.002
+        _Exclusions:
+        - Bone01.003
+        _FreezeAxis: 0
+        _DistantDisable: 1
+        _ReferenceObject: {fileID: 0}
+        _DistanceToObject: 20
+    _dbcnodes:
+    - _name: Collider01
+      _parent: Bone01
+      _localPosition: {x: 0, y: 0, z: 0}
+      _localRotation: {x: 0, y: 0, z: 0, w: 1}
+      _localScale: {x: 1, y: 1, z: 1}
+      _dbcprop:
+        _Direction: 1
+        _Center: {x: 0, y: 0, z: 0}
+        _Bound: 0
+        _Radius: 0.1
+        _Height: 0
+    - _name: Collider01.001
+      _parent: Collider01
+      _localPosition: {x: 0, y: 0, z: 0}
+      _localRotation: {x: -0, y: -0, z: -0, w: 1}
+      _localScale: {x: 1, y: 1, z: 1}
+      _dbcprop:
+        _Direction: 1
+        _Center: {x: 0, y: 0, z: 0}
+        _Bound: 0
+        _Radius: 0.1
+        _Height: 0
+    - _name: Collider01.002
+      _parent: Collider01.001
+      _localPosition: {x: 0, y: 0, z: 0}
+      _localRotation: {x: -0, y: -0, z: -0, w: 1}
+      _localScale: {x: 1, y: 1, z: 1}
+      _dbcprop:
+        _Direction: 1
+        _Center: {x: 0, y: 0, z: 0}
+        _Bound: 0
+        _Radius: 0.1
+        _Height: 0
+    - _name: Collider02.001
+      _parent: Bone02.001
+      _localPosition: {x: 0, y: 0, z: 0}
+      _localRotation: {x: 0, y: 0, z: 0, w: 1}
+      _localScale: {x: 1, y: 1, z: 1}
+      _dbcprop:
+        _Direction: 1
+        _Center: {x: 0, y: 0, z: 0}
+        _Bound: 0
+        _Radius: 0.1
+        _Height: 0
+    - _name: Collider02
+      _parent: Bone02
+      _localPosition: {x: 0, y: 0, z: 0}
+      _localRotation: {x: 0, y: 0, z: 0, w: 1}
+      _localScale: {x: 1, y: 1, z: 1}
+      _dbcprop:
+        _Direction: 1
+        _Center: {x: 0, y: 0, z: 0}
+        _Bound: 0
+        _Radius: 0.1
+        _Height: 0
+  - _settingsName: NoCollider
+    _rootName: RootObject2
+    _armatureName: BoneRoot
+    _dbrefObjRoot: RootObject3
+    _dbNodeRoot: BoneRoot
+    _dbnodes:
+    - _name: Bone01
+      _parent: BoneRoot
+      _dbprop:
+        _root: Bone01
+        _UpdateRate: 60
+        _UpdateMode: 0
+        _Damping: 0.1
+        _DampingDistrib:
+          serializedVersion: 2
+          m_Curve: []
+          m_PreInfinity: 2
+          m_PostInfinity: 2
+          m_RotationOrder: 4
+        _Elasticity: 0.1
+        _ElasticityDistrib:
+          serializedVersion: 2
+          m_Curve: []
+          m_PreInfinity: 2
+          m_PostInfinity: 2
+          m_RotationOrder: 4
+        _Stiffness: 0.1
+        _StiffnessDistrib:
+          serializedVersion: 2
+          m_Curve: []
+          m_PreInfinity: 2
+          m_PostInfinity: 2
+          m_RotationOrder: 4
+        _Inert: 0
+        _InertDistrib:
+          serializedVersion: 2
+          m_Curve: []
+          m_PreInfinity: 2
+          m_PostInfinity: 2
+          m_RotationOrder: 4
+        _Radius: 0.1
+        _RadiusDistrib:
+          serializedVersion: 2
+          m_Curve: []
+          m_PreInfinity: 2
+          m_PostInfinity: 2
+          m_RotationOrder: 4
+        _EndLength: 1
+        _EndOffset: {x: 0, y: 0, z: 0}
+        _Gravity: {x: 0, y: 0, z: 0}
+        _Force: {x: 0, y: 0, z: 0}
+        _colliders: []
+        _Exclusions: []
+        _FreezeAxis: 0
+        _DistantDisable: 1
+        _ReferenceObject: {fileID: 0}
+        _DistanceToObject: 20
+    - _name: Bone02
+      _parent: BoneRoot
+      _dbprop:
+        _root: Bone02
+        _UpdateRate: 60
+        _UpdateMode: 0
+        _Damping: 0.1
+        _DampingDistrib:
+          serializedVersion: 2
+          m_Curve: []
+          m_PreInfinity: 2
+          m_PostInfinity: 2
+          m_RotationOrder: 4
+        _Elasticity: 0.1
+        _ElasticityDistrib:
+          serializedVersion: 2
+          m_Curve: []
+          m_PreInfinity: 2
+          m_PostInfinity: 2
+          m_RotationOrder: 4
+        _Stiffness: 0.1
+        _StiffnessDistrib:
+          serializedVersion: 2
+          m_Curve: []
+          m_PreInfinity: 2
+          m_PostInfinity: 2
+          m_RotationOrder: 4
+        _Inert: 0
+        _InertDistrib:
+          serializedVersion: 2
+          m_Curve: []
+          m_PreInfinity: 2
+          m_PostInfinity: 2
+          m_RotationOrder: 4
+        _Radius: 0.1
+        _RadiusDistrib:
+          serializedVersion: 2
+          m_Curve: []
+          m_PreInfinity: 2
+          m_PostInfinity: 2
+          m_RotationOrder: 4
+        _EndLength: 1
+        _EndOffset: {x: 0, y: 0, z: 0}
+        _Gravity: {x: 0, y: 0, z: 0}
+        _Force: {x: 0, y: 0, z: 0}
+        _colliders: []
+        _Exclusions: []
+        _FreezeAxis: 0
+        _DistantDisable: 1
+        _ReferenceObject: {fileID: 0}
+        _DistanceToObject: 20
+    _dbcnodes: []

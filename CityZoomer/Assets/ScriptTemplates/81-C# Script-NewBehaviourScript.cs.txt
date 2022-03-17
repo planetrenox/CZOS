@@ -1,0 +1,36 @@
+using UnityEngine;
+
+    #ROOTNAMESPACEBEGIN#
+public class #SCRIPTNAME# : MonoBehaviour
+{
+    private void Awake()
+    {
+        #NOTRIM#
+    }
+    private void OnEnable()
+    {
+        #NOTRIM#
+    }
+    private void Start()
+    {
+        #NOTRIM#
+    }
+    private void Update()
+    {
+        #NOTRIM#
+    }
+    private void OnApplicationQuit()
+    {
+        #NOTRIM#
+    }
+    private void OnDisable()
+    {
+        #NOTRIM#
+    }
+    private void OnDestory()
+    {
+        #NOTRIM#
+    }
+    // https://docs.unity3d.com/Manual/ExecutionOrder.html
+}
+#ROOTNAMESPACEEND#

@@ -1,0 +1,406 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!319 &31900000
+AvatarMask:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: FacialMask
+  m_Mask: 00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+  m_Elements:
+  - m_Path: 
+    m_Weight: 1
+  - m_Path: Armature
+    m_Weight: 0
+  - m_Path: Armature/Hips
+    m_Weight: 0
+  - m_Path: Armature/Hips/LeftUpperLeg
+    m_Weight: 0
+  - m_Path: Armature/Hips/LeftUpperLeg/LeftLowerLeg
+    m_Weight: 0
+  - m_Path: Armature/Hips/LeftUpperLeg/LeftLowerLeg/LeftFoot
+    m_Weight: 0
+  - m_Path: Armature/Hips/LeftUpperLeg/LeftLowerLeg/LeftFoot/LeftToes
+    m_Weight: 0
+  - m_Path: Armature/Hips/RightUpperLeg
+    m_Weight: 0
+  - m_Path: Armature/Hips/RightUpperLeg/RightLowerLeg
+    m_Weight: 0
+  - m_Path: Armature/Hips/RightUpperLeg/RightLowerLeg/RightFoot
+    m_Weight: 0
+  - m_Path: Armature/Hips/RightUpperLeg/RightLowerLeg/RightFoot/RightToes
+    m_Weight: 0
+  - m_Path: Armature/Hips/Skirt
+    m_Weight: 0
+  - m_Path: Armature/Hips/Skirt/Skirt_01
+    m_Weight: 0
+  - m_Path: Armature/Hips/Skirt/Skirt_01/Skirt_01.001
+    m_Weight: 0
+  - m_Path: Armature/Hips/Skirt/Skirt_01/Skirt_01.001/Skirt_01.002
+    m_Weight: 0
+  - m_Path: Armature/Hips/Skirt/Skirt_01/Skirt_01.001/Skirt_01.002/Skirt_01.003
+    m_Weight: 0
+  - m_Path: Armature/Hips/Skirt/Skirt_01/Skirt_01.001/Skirt_01.002/Skirt_01.003/Skirt_01.004
+    m_Weight: 0
+  - m_Path: Armature/Hips/Skirt/Skirt_02
+    m_Weight: 0
+  - m_Path: Armature/Hips/Skirt/Skirt_02/Skirt_02.001
+    m_Weight: 0
+  - m_Path: Armature/Hips/Skirt/Skirt_02/Skirt_02.001/Skirt_02.002
+    m_Weight: 0
+  - m_Path: Armature/Hips/Skirt/Skirt_02/Skirt_02.001/Skirt_02.002/Skirt_02.003
+    m_Weight: 0
+  - m_Path: Armature/Hips/Skirt/Skirt_02/Skirt_02.001/Skirt_02.002/Skirt_02.003/Skirt_02.004
+    m_Weight: 0
+  - m_Path: Armature/Hips/Skirt/Skirt_03
+    m_Weight: 0
+  - m_Path: Armature/Hips/Skirt/Skirt_03/Skirt_03.001
+    m_Weight: 0
+  - m_Path: Armature/Hips/Skirt/Skirt_03/Skirt_03.001/Skirt_03.002
+    m_Weight: 0
+  - m_Path: Armature/Hips/Skirt/Skirt_03/Skirt_03.001/Skirt_03.002/Skirt_03.003
+    m_Weight: 0
+  - m_Path: Armature/Hips/Skirt/Skirt_03/Skirt_03.001/Skirt_03.002/Skirt_03.003/Skirt_03.004
+    m_Weight: 0
+  - m_Path: Armature/Hips/Skirt/Skirt_04
+    m_Weight: 0
+  - m_Path: Armature/Hips/Skirt/Skirt_04/Skirt_04.001
+    m_Weight: 0
+  - m_Path: Armature/Hips/Skirt/Skirt_04/Skirt_04.001/Skirt_04.002
+    m_Weight: 0
+  - m_Path: Armature/Hips/Skirt/Skirt_04/Skirt_04.001/Skirt_04.002/Skirt_04.003
+    m_Weight: 0
+  - m_Path: Armature/Hips/Skirt/Skirt_04/Skirt_04.001/Skirt_04.002/Skirt_04.003/Skirt_04.004
+    m_Weight: 0
+  - m_Path: Armature/Hips/Skirt/Skirt_05
+    m_Weight: 0
+  - m_Path: Armature/Hips/Skirt/Skirt_05/Skirt_05.001
+    m_Weight: 0
+  - m_Path: Armature/Hips/Skirt/Skirt_05/Skirt_05.001/Skirt_05.002
+    m_Weight: 0
+  - m_Path: Armature/Hips/Skirt/Skirt_05/Skirt_05.001/Skirt_05.002/Skirt_05.003
+    m_Weight: 0
+  - m_Path: Armature/Hips/Skirt/Skirt_05/Skirt_05.001/Skirt_05.002/Skirt_05.003/Skirt_05.004
+    m_Weight: 0
+  - m_Path: Armature/Hips/Skirt/Skirt_06
+    m_Weight: 0
+  - m_Path: Armature/Hips/Skirt/Skirt_06/Skirt_06.001
+    m_Weight: 0
+  - m_Path: Armature/Hips/Skirt/Skirt_06/Skirt_06.001/Skirt_06.002
+    m_Weight: 0
+  - m_Path: Armature/Hips/Skirt/Skirt_06/Skirt_06.001/Skirt_06.002/Skirt_06.003
+    m_Weight: 0
+  - m_Path: Armature/Hips/Skirt/Skirt_06/Skirt_06.001/Skirt_06.002/Skirt_06.003/Skirt_06.004
+    m_Weight: 0
+  - m_Path: Armature/Hips/Skirt/Skirt_07
+    m_Weight: 0
+  - m_Path: Armature/Hips/Skirt/Skirt_07/Skirt_07.001
+    m_Weight: 0
+  - m_Path: Armature/Hips/Skirt/Skirt_07/Skirt_07.001/Skirt_07.002
+    m_Weight: 0
+  - m_Path: Armature/Hips/Skirt/Skirt_07/Skirt_07.001/Skirt_07.002/Skirt_07.003
+    m_Weight: 0
+  - m_Path: Armature/Hips/Skirt/Skirt_07/Skirt_07.001/Skirt_07.002/Skirt_07.003/Skirt_07.004
+    m_Weight: 0
+  - m_Path: Armature/Hips/Skirt/Skirt_08
+    m_Weight: 0
+  - m_Path: Armature/Hips/Skirt/Skirt_08/Skirt_08.001
+    m_Weight: 0
+  - m_Path: Armature/Hips/Skirt/Skirt_08/Skirt_08.001/Skirt_08.002
+    m_Weight: 0
+  - m_Path: Armature/Hips/Skirt/Skirt_08/Skirt_08.001/Skirt_08.002/Skirt_08.003
+    m_Weight: 0
+  - m_Path: Armature/Hips/Skirt/Skirt_08/Skirt_08.001/Skirt_08.002/Skirt_08.003/Skirt_08.004
+    m_Weight: 0
+  - m_Path: Armature/Hips/Skirt/Skirt_09
+    m_Weight: 0
+  - m_Path: Armature/Hips/Skirt/Skirt_09/Skirt_09.001
+    m_Weight: 0
+  - m_Path: Armature/Hips/Skirt/Skirt_09/Skirt_09.001/Skirt_09.002
+    m_Weight: 0
+  - m_Path: Armature/Hips/Skirt/Skirt_09/Skirt_09.001/Skirt_09.002/Skirt_09.003
+    m_Weight: 0
+  - m_Path: Armature/Hips/Skirt/Skirt_09/Skirt_09.001/Skirt_09.002/Skirt_09.003/Skirt_09.004
+    m_Weight: 0
+  - m_Path: Armature/Hips/Skirt/Skirt_10
+    m_Weight: 0
+  - m_Path: Armature/Hips/Skirt/Skirt_10/Skirt_10.001
+    m_Weight: 0
+  - m_Path: Armature/Hips/Skirt/Skirt_10/Skirt_10.001/Skirt_10.002
+    m_Weight: 0
+  - m_Path: Armature/Hips/Skirt/Skirt_10/Skirt_10.001/Skirt_10.002/Skirt_10.003
+    m_Weight: 0
+  - m_Path: Armature/Hips/Skirt/Skirt_10/Skirt_10.001/Skirt_10.002/Skirt_10.003/Skirt_10.004
+    m_Weight: 0
+  - m_Path: Armature/Hips/Skirt/Skirt_11
+    m_Weight: 0
+  - m_Path: Armature/Hips/Skirt/Skirt_11/Skirt_11.001
+    m_Weight: 0
+  - m_Path: Armature/Hips/Skirt/Skirt_11/Skirt_11.001/Skirt_11.002
+    m_Weight: 0
+  - m_Path: Armature/Hips/Skirt/Skirt_11/Skirt_11.001/Skirt_11.002/Skirt_11.003
+    m_Weight: 0
+  - m_Path: Armature/Hips/Skirt/Skirt_11/Skirt_11.001/Skirt_11.002/Skirt_11.003/Skirt_11.004
+    m_Weight: 0
+  - m_Path: Armature/Hips/Skirt/Skirt_12
+    m_Weight: 0
+  - m_Path: Armature/Hips/Skirt/Skirt_12/Skirt_12.001
+    m_Weight: 0
+  - m_Path: Armature/Hips/Skirt/Skirt_12/Skirt_12.001/Skirt_12.002
+    m_Weight: 0
+  - m_Path: Armature/Hips/Skirt/Skirt_12/Skirt_12.001/Skirt_12.002/Skirt_12.003
+    m_Weight: 0
+  - m_Path: Armature/Hips/Skirt/Skirt_12/Skirt_12.001/Skirt_12.002/Skirt_12.003/Skirt_12.004
+    m_Weight: 0
+  - m_Path: Armature/Hips/Skirt/Skirt_13
+    m_Weight: 0
+  - m_Path: Armature/Hips/Skirt/Skirt_13/Skirt_13.001
+    m_Weight: 0
+  - m_Path: Armature/Hips/Skirt/Skirt_13/Skirt_13.001/Skirt_13.002
+    m_Weight: 0
+  - m_Path: Armature/Hips/Skirt/Skirt_13/Skirt_13.001/Skirt_13.002/Skirt_13.003
+    m_Weight: 0
+  - m_Path: Armature/Hips/Skirt/Skirt_13/Skirt_13.001/Skirt_13.002/Skirt_13.003/Skirt_13.004
+    m_Weight: 0
+  - m_Path: Armature/Hips/Skirt/Skirt_14
+    m_Weight: 0
+  - m_Path: Armature/Hips/Skirt/Skirt_14/Skirt_14.001
+    m_Weight: 0
+  - m_Path: Armature/Hips/Skirt/Skirt_14/Skirt_14.001/Skirt_14.002
+    m_Weight: 0
+  - m_Path: Armature/Hips/Skirt/Skirt_14/Skirt_14.001/Skirt_14.002/Skirt_14.003
+    m_Weight: 0
+  - m_Path: Armature/Hips/Skirt/Skirt_14/Skirt_14.001/Skirt_14.002/Skirt_14.003/Skirt_14.004
+    m_Weight: 0
+  - m_Path: Armature/Hips/Skirt/Skirt_15
+    m_Weight: 0
+  - m_Path: Armature/Hips/Skirt/Skirt_15/Skirt_15.001
+    m_Weight: 0
+  - m_Path: Armature/Hips/Skirt/Skirt_15/Skirt_15.001/Skirt_15.002
+    m_Weight: 0
+  - m_Path: Armature/Hips/Skirt/Skirt_15/Skirt_15.001/Skirt_15.002/Skirt_15.003
+    m_Weight: 0
+  - m_Path: Armature/Hips/Skirt/Skirt_15/Skirt_15.001/Skirt_15.002/Skirt_15.003/Skirt_15.004
+    m_Weight: 0
+  - m_Path: Armature/Hips/Skirt/Skirt_16
+    m_Weight: 0
+  - m_Path: Armature/Hips/Skirt/Skirt_16/Skirt_16.001
+    m_Weight: 0
+  - m_Path: Armature/Hips/Skirt/Skirt_16/Skirt_16.001/Skirt_16.002
+    m_Weight: 0
+  - m_Path: Armature/Hips/Skirt/Skirt_16/Skirt_16.001/Skirt_16.002/Skirt_16.003
+    m_Weight: 0
+  - m_Path: Armature/Hips/Skirt/Skirt_16/Skirt_16.001/Skirt_16.002/Skirt_16.003/Skirt_16.004
+    m_Weight: 0
+  - m_Path: Armature/Hips/Skirt/Skirt_17
+    m_Weight: 0
+  - m_Path: Armature/Hips/Skirt/Skirt_17/Skirt_17.001
+    m_Weight: 0
+  - m_Path: Armature/Hips/Skirt/Skirt_17/Skirt_17.001/Skirt_17.002
+    m_Weight: 0
+  - m_Path: Armature/Hips/Skirt/Skirt_17/Skirt_17.001/Skirt_17.002/Skirt_17.003
+    m_Weight: 0
+  - m_Path: Armature/Hips/Skirt/Skirt_17/Skirt_17.001/Skirt_17.002/Skirt_17.003/Skirt_17.004
+    m_Weight: 0
+  - m_Path: Armature/Hips/Skirt/Skirt_18
+    m_Weight: 0
+  - m_Path: Armature/Hips/Skirt/Skirt_18/Skirt_18.001
+    m_Weight: 0
+  - m_Path: Armature/Hips/Skirt/Skirt_18/Skirt_18.001/Skirt_18.002
+    m_Weight: 0
+  - m_Path: Armature/Hips/Skirt/Skirt_18/Skirt_18.001/Skirt_18.002/Skirt_18.003
+    m_Weight: 0
+  - m_Path: Armature/Hips/Skirt/Skirt_18/Skirt_18.001/Skirt_18.002/Skirt_18.003/Skirt_18.004
+    m_Weight: 0
+  - m_Path: Armature/Hips/Skirt/Skirt_19
+    m_Weight: 0
+  - m_Path: Armature/Hips/Skirt/Skirt_19/Skirt_19.001
+    m_Weight: 0
+  - m_Path: Armature/Hips/Skirt/Skirt_19/Skirt_19.001/Skirt_19.002
+    m_Weight: 0
+  - m_Path: Armature/Hips/Skirt/Skirt_19/Skirt_19.001/Skirt_19.002/Skirt_19.003
+    m_Weight: 0
+  - m_Path: Armature/Hips/Skirt/Skirt_19/Skirt_19.001/Skirt_19.002/Skirt_19.003/Skirt_19.004
+    m_Weight: 0
+  - m_Path: Armature/Hips/Spine
+    m_Weight: 0
+  - m_Path: Armature/Hips/Spine/body_ribon02_b.L
+    m_Weight: 0
+  - m_Path: Armature/Hips/Spine/body_ribon02_b.L/body_ribon02_b.L.001
+    m_Weight: 0
+  - m_Path: Armature/Hips/Spine/body_ribon02_b.R
+    m_Weight: 0
+  - m_Path: Armature/Hips/Spine/body_ribon02_b.R/body_ribon02_b.R.001
+    m_Weight: 0
+  - m_Path: Armature/Hips/Spine/body_ribon02_b01.L
+    m_Weight: 0
+  - m_Path: Armature/Hips/Spine/body_ribon02_b01.L/body_ribon02_b01.L.001
+    m_Weight: 0
+  - m_Path: Armature/Hips/Spine/body_ribon02_b01.L/body_ribon02_b01.L.001/body_ribon02_b01.L.002
+    m_Weight: 0
+  - m_Path: Armature/Hips/Spine/body_ribon02_b01.L/body_ribon02_b01.L.001/body_ribon02_b01.L.002/body_ribon02_b01.L.003
+    m_Weight: 0
+  - m_Path: Armature/Hips/Spine/body_ribon02_b01.L/body_ribon02_b01.L.001/body_ribon02_b01.L.002/body_ribon02_b01.L.003/body_ribon02_b01.L.004
+    m_Weight: 0
+  - m_Path: Armature/Hips/Spine/body_ribon02_b01.R
+    m_Weight: 0
+  - m_Path: Armature/Hips/Spine/body_ribon02_b01.R/body_ribon02_b01.R.001
+    m_Weight: 0
+  - m_Path: Armature/Hips/Spine/body_ribon02_b01.R/body_ribon02_b01.R.001/body_ribon02_b01.R.002
+    m_Weight: 0
+  - m_Path: Armature/Hips/Spine/body_ribon02_b01.R/body_ribon02_b01.R.001/body_ribon02_b01.R.002/body_ribon02_b01.R.003
+    m_Weight: 0
+  - m_Path: Armature/Hips/Spine/body_ribon02_b01.R/body_ribon02_b01.R.001/body_ribon02_b01.R.002/body_ribon02_b01.R.003/body_ribon02_b01.R.004
+    m_Weight: 0
+  - m_Path: Armature/Hips/Spine/body_ribon07.L
+    m_Weight: 0
+  - m_Path: Armature/Hips/Spine/body_ribon07.L/body_ribon07.L.001
+    m_Weight: 0
+  - m_Path: Armature/Hips/Spine/body_ribon07.L/body_ribon07.L.001/body_ribon07.L.002
+    m_Weight: 0
+  - m_Path: Armature/Hips/Spine/body_ribon07.R
+    m_Weight: 0
+  - m_Path: Armature/Hips/Spine/body_ribon07.R/body_ribon07.R.001
+    m_Weight: 0
+  - m_Path: Armature/Hips/Spine/body_ribon07.R/body_ribon07.R.001/body_ribon07.R.002
+    m_Weight: 0
+  - m_Path: Armature/Hips/Spine/Chest
+    m_Weight: 0
+  - m_Path: Armature/Hips/Spine/Chest/body_ribon01
+    m_Weight: 0
+  - m_Path: Armature/Hips/Spine/Chest/body_ribon01/body_ribon01.001
+    m_Weight: 0
+  - m_Path: Armature/Hips/Spine/Chest/body_ribon03
+    m_Weight: 0
+  - m_Path: Armature/Hips/Spine/Chest/body_ribon03/body_ribon03.001
+    m_Weight: 0
+  - m_Path: Armature/Hips/Spine/Chest/body_ribon04
+    m_Weight: 0
+  - m_Path: Armature/Hips/Spine/Chest/body_ribon04/body_ribon04.001
+    m_Weight: 0
+  - m_Path: Armature/Hips/Spine/Chest/body_ribon05
+    m_Weight: 0
+  - m_Path: Armature/Hips/Spine/Chest/body_ribon05/body_ribon05.001
+    m_Weight: 0
+  - m_Path: Armature/Hips/Spine/Chest/bust_root.L
+    m_Weight: 0
+  - m_Path: Armature/Hips/Spine/Chest/bust_root.L/bust.L
+    m_Weight: 0
+  - m_Path: Armature/Hips/Spine/Chest/bust_root.R
+    m_Weight: 0
+  - m_Path: Armature/Hips/Spine/Chest/bust_root.R/bust.R
+    m_Weight: 0
+  - m_Path: Armature/Hips/Spine/Chest/LeftShoulder
+    m_Weight: 0
+  - m_Path: Armature/Hips/Spine/Chest/LeftShoulder/LeftUpperArm
+    m_Weight: 0
+  - m_Path: Armature/Hips/Spine/Chest/LeftShoulder/LeftUpperArm/body_ribon06.L
+    m_Weight: 0
+  - m_Path: Armature/Hips/Spine/Chest/LeftShoulder/LeftUpperArm/body_ribon06.L/body_ribon06.L.001
+    m_Weight: 0
+  - m_Path: Armature/Hips/Spine/Chest/LeftShoulder/LeftUpperArm/body_ribon06.L/body_ribon06.L.001/body_ribon06.L.002
+    m_Weight: 0
+  - m_Path: Armature/Hips/Spine/Chest/LeftShoulder/LeftUpperArm/LeftLowerArm
+    m_Weight: 0
+  - m_Path: Armature/Hips/Spine/Chest/LeftShoulder/LeftUpperArm/LeftLowerArm/LeftHand
+    m_Weight: 0
+  - m_Path: Armature/Hips/Spine/Chest/LeftShoulder/LeftUpperArm/LeftLowerArm/LeftHand/f_index.01.L
+    m_Weight: 0
+  - m_Path: Armature/Hips/Spine/Chest/LeftShoulder/LeftUpperArm/LeftLowerArm/LeftHand/f_index.01.L/f_index.02.L
+    m_Weight: 0
+  - m_Path: Armature/Hips/Spine/Chest/LeftShoulder/LeftUpperArm/LeftLowerArm/LeftHand/f_index.01.L/f_index.02.L/f_index.03.L
+    m_Weight: 0
+  - m_Path: Armature/Hips/Spine/Chest/LeftShoulder/LeftUpperArm/LeftLowerArm/LeftHand/f_little.01.L
+    m_Weight: 0
+  - m_Path: Armature/Hips/Spine/Chest/LeftShoulder/LeftUpperArm/LeftLowerArm/LeftHand/f_little.01.L/f_little.02.L
+    m_Weight: 0
+  - m_Path: Armature/Hips/Spine/Chest/LeftShoulder/LeftUpperArm/LeftLowerArm/LeftHand/f_little.01.L/f_little.02.L/f_little.03.L
+    m_Weight: 0
+  - m_Path: Armature/Hips/Spine/Chest/LeftShoulder/LeftUpperArm/LeftLowerArm/LeftHand/f_middle.01.L
+    m_Weight: 0
+  - m_Path: Armature/Hips/Spine/Chest/LeftShoulder/LeftUpperArm/LeftLowerArm/LeftHand/f_middle.01.L/f_middle.02.L
+    m_Weight: 0
+  - m_Path: Armature/Hips/Spine/Chest/LeftShoulder/LeftUpperArm/LeftLowerArm/LeftHand/f_middle.01.L/f_middle.02.L/f_middle.03.L
+    m_Weight: 0
+  - m_Path: Armature/Hips/Spine/Chest/LeftShoulder/LeftUpperArm/LeftLowerArm/LeftHand/f_ring.01.L
+    m_Weight: 0
+  - m_Path: Armature/Hips/Spine/Chest/LeftShoulder/LeftUpperArm/LeftLowerArm/LeftHand/f_ring.01.L/f_ring.02.L
+    m_Weight: 0
+  - m_Path: Armature/Hips/Spine/Chest/LeftShoulder/LeftUpperArm/LeftLowerArm/LeftHand/f_ring.01.L/f_ring.02.L/f_ring.03.L
+    m_Weight: 0
+  - m_Path: Armature/Hips/Spine/Chest/LeftShoulder/LeftUpperArm/LeftLowerArm/LeftHand/f_thumb.01.L
+    m_Weight: 0
+  - m_Path: Armature/Hips/Spine/Chest/LeftShoulder/LeftUpperArm/LeftLowerArm/LeftHand/f_thumb.01.L/f_thumb.02.L
+    m_Weight: 0
+  - m_Path: Armature/Hips/Spine/Chest/LeftShoulder/LeftUpperArm/LeftLowerArm/LeftHand/f_thumb.01.L/f_thumb.02.L/f_thumb.03.L
+    m_Weight: 0
+  - m_Path: Armature/Hips/Spine/Chest/LeftShoulder/LeftUpperArm/sleeve01.L
+    m_Weight: 0
+  - m_Path: Armature/Hips/Spine/Chest/LeftShoulder/LeftUpperArm/sleeve01.L/sleeve01.L.001
+    m_Weight: 0
+  - m_Path: Armature/Hips/Spine/Chest/Neck
+    m_Weight: 0
+  - m_Path: Armature/Hips/Spine/Chest/Neck/Head
+    m_Weight: 0
+  - m_Path: Armature/Hips/Spine/Chest/Neck/Head/Hair
+    m_Weight: 0
+  - m_Path: Armature/Hips/Spine/Chest/Neck/Head/LeftEye
+    m_Weight: 0
+  - m_Path: Armature/Hips/Spine/Chest/Neck/Head/RightEye
+    m_Weight: 0
+  - m_Path: Armature/Hips/Spine/Chest/RightShoulder
+    m_Weight: 0
+  - m_Path: Armature/Hips/Spine/Chest/RightShoulder/RightUpperArm
+    m_Weight: 0
+  - m_Path: Armature/Hips/Spine/Chest/RightShoulder/RightUpperArm/body_ribon06.R
+    m_Weight: 0
+  - m_Path: Armature/Hips/Spine/Chest/RightShoulder/RightUpperArm/body_ribon06.R/body_ribon06.R.001
+    m_Weight: 0
+  - m_Path: Armature/Hips/Spine/Chest/RightShoulder/RightUpperArm/body_ribon06.R/body_ribon06.R.001/body_ribon06.R.002
+    m_Weight: 0
+  - m_Path: Armature/Hips/Spine/Chest/RightShoulder/RightUpperArm/RightLowerArm
+    m_Weight: 0
+  - m_Path: Armature/Hips/Spine/Chest/RightShoulder/RightUpperArm/RightLowerArm/RightHand
+    m_Weight: 0
+  - m_Path: Armature/Hips/Spine/Chest/RightShoulder/RightUpperArm/RightLowerArm/RightHand/f_index.01.R
+    m_Weight: 0
+  - m_Path: Armature/Hips/Spine/Chest/RightShoulder/RightUpperArm/RightLowerArm/RightHand/f_index.01.R/f_index.02.R
+    m_Weight: 0
+  - m_Path: Armature/Hips/Spine/Chest/RightShoulder/RightUpperArm/RightLowerArm/RightHand/f_index.01.R/f_index.02.R/f_index.03.R
+    m_Weight: 0
+  - m_Path: Armature/Hips/Spine/Chest/RightShoulder/RightUpperArm/RightLowerArm/RightHand/f_little.01.R
+    m_Weight: 0
+  - m_Path: Armature/Hips/Spine/Chest/RightShoulder/RightUpperArm/RightLowerArm/RightHand/f_little.01.R/f_little.02.R
+    m_Weight: 0
+  - m_Path: Armature/Hips/Spine/Chest/RightShoulder/RightUpperArm/RightLowerArm/RightHand/f_little.01.R/f_little.02.R/f_little.03.R
+    m_Weight: 0
+  - m_Path: Armature/Hips/Spine/Chest/RightShoulder/RightUpperArm/RightLowerArm/RightHand/f_middle.01.R
+    m_Weight: 0
+  - m_Path: Armature/Hips/Spine/Chest/RightShoulder/RightUpperArm/RightLowerArm/RightHand/f_middle.01.R/f_middle.02.R
+    m_Weight: 0
+  - m_Path: Armature/Hips/Spine/Chest/RightShoulder/RightUpperArm/RightLowerArm/RightHand/f_middle.01.R/f_middle.02.R/f_middle.03.R
+    m_Weight: 0
+  - m_Path: Armature/Hips/Spine/Chest/RightShoulder/RightUpperArm/RightLowerArm/RightHand/f_ring.01.R
+    m_Weight: 0
+  - m_Path: Armature/Hips/Spine/Chest/RightShoulder/RightUpperArm/RightLowerArm/RightHand/f_ring.01.R/f_ring.02.R
+    m_Weight: 0
+  - m_Path: Armature/Hips/Spine/Chest/RightShoulder/RightUpperArm/RightLowerArm/RightHand/f_ring.01.R/f_ring.02.R/f_ring.03.R
+    m_Weight: 0
+  - m_Path: Armature/Hips/Spine/Chest/RightShoulder/RightUpperArm/RightLowerArm/RightHand/f_thumb.01.R
+    m_Weight: 0
+  - m_Path: Armature/Hips/Spine/Chest/RightShoulder/RightUpperArm/RightLowerArm/RightHand/f_thumb.01.R/f_thumb.02.R
+    m_Weight: 0
+  - m_Path: Armature/Hips/Spine/Chest/RightShoulder/RightUpperArm/RightLowerArm/RightHand/f_thumb.01.R/f_thumb.02.R/f_thumb.03.R
+    m_Weight: 0
+  - m_Path: Armature/Hips/Spine/Chest/RightShoulder/RightUpperArm/sleeve01.R
+    m_Weight: 0
+  - m_Path: Armature/Hips/Spine/Chest/RightShoulder/RightUpperArm/sleeve01.R/sleeve01.R.001
+    m_Weight: 0
+  - m_Path: Armature/Mesh
+    m_Weight: 0
+  - m_Path: Armature/Mesh/Costume
+    m_Weight: 0
+  - m_Path: Armature/Mesh/Costume/Cos01_HS_Uniform_EP
+    m_Weight: 0
+  - m_Path: Body
+    m_Weight: 1

@@ -1,0 +1,76 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9168bd0e7d7ff4e409b67e0c31e28ca7, type: 3}
+  m_Name: EasyMeshCombiner
+  m_EditorClassIdentifier: 
+  projectName: CityZoomer
+  windowPosition:
+    serializedVersion: 2
+    x: 650
+    y: 202
+    width: 620
+    height: 676
+  representLogsInScene: 1
+  afterMerge: 1
+  mergeMethod: 0
+  oneMeshPerMaterialParams:
+    addMeshCollider: 0
+  allInOneParams:
+    materialToUse: {fileID: 0}
+    maxTexturesPerAtlas: 12
+    atlasResolution: 5
+    mipMapEdgesSize: 3
+    atlasPadding: 0
+    mergeTiledTextures: 1
+    useDefaultMainTextureProperty: 1
+    mainTexturePropertyToFind: _MainTex
+    mainTexturePropertyToInsert: _MainTex
+    metallicMapSupport: 0
+    metallicMapPropertyToFind: _MetallicGlossMap
+    metallicMapPropertyToInsert: _MetallicGlossMap
+    specularMapSupport: 0
+    specularMapPropertyToFind: _SpecGlossMap
+    specularMapPropertyToInsert: _SpecGlossMap
+    normalMapSupport: 0
+    normalMapPropertyToFind: _BumpMap
+    normalMapPropertyToInsert: _BumpMap
+    normalMap2Support: 0
+    normalMap2PropertyFind: _DetailNormalMap
+    normalMap2PropertyToInsert: _DetailNormalMap
+    heightMapSupport: 0
+    heightMapPropertyToFind: _ParallaxMap
+    heightMapPropertyToInsert: _ParallaxMap
+    occlusionMapSupport: 0
+    occlusionMapPropertyToFind: _OcclusionMap
+    occlusionMapPropertyToInsert: _OcclusionMap
+    detailAlbedoMapSupport: 0
+    detailMapPropertyToFind: _DetailAlbedoMap
+    detailMapPropertyToInsert: _DetailAlbedoMap
+    detailMaskSupport: 0
+    detailMaskPropertyToFind: _DetailMask
+    detailMaskPropertyToInsert: _DetailMask
+    pinkNormalMapsFix: 1
+    addMeshCollider: 0
+    highlightUvVertices: 0
+  justMaterialColorsParams:
+    materialToUse: {fileID: 0}
+    useDefaultColorProperty: 1
+    colorPropertyToFind: _Color
+    mainTexturePropertyToInsert: _MainTex
+    addMeshCollider: 0
+  combineChildrens: 1
+  combineInactives: 0
+  lightmapSupport: 0
+  saveMeshInAssets: 1
+  savePrefabOfThis: 0
+  prefabName: prefab
+  nameOfThisMerge: Combined Meshes

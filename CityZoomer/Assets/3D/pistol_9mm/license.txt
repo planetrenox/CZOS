@@ -1,0 +1,11 @@
+Model Information:
+* title:	Pistol 9mm
+* source:	https://sketchfab.com/3d-models/pistol-9mm-8a9e804b452142d3a41548d89beb6430
+* author:	EXTRAGRANI official (https://sketchfab.com/extragrani)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Pistol 9mm" (https://sketchfab.com/3d-models/pistol-9mm-8a9e804b452142d3a41548d89beb6430) by EXTRAGRANI official (https://sketchfab.com/extragrani) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

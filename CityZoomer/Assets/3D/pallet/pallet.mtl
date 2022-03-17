@@ -1,0 +1,12 @@
+# Blender MTL File: 'objects.blend'
+# Material Count: 1
+
+newmtl pallet
+Ns 225.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.538224 0.421647 0.166393
+Ks 0.500000 0.500000 0.500000
+Ke 0.0 0.0 0.0
+Ni 1.000000
+d 1.000000
+illum 2

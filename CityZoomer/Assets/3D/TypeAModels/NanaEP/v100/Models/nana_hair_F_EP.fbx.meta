@@ -1,0 +1,130 @@
+fileFormatVersion: 2
+guid: 7149bc50d3272ca44a41864c4ccaee68
+ModelImporter:
+  serializedVersion: 22
+  fileIDToRecycleName:
+    100000: hair.f.C
+    100002: hair.f.C.001
+    100004: hair.f.L
+    100006: hair.f.L.001
+    100008: hair.f.R
+    100010: hair.f.R.001
+    100012: hair.s.L
+    100014: hair.s.L.001
+    100016: hair.s.L.002
+    100018: hair.s.R
+    100020: hair.s.R.001
+    100022: hair.s.R.002
+    100024: Hair_aho
+    100026: Hair_aho.001
+    100028: Hair_F
+    100030: Hair_F_Root
+    100032: nana_hair_F
+    100034: //RootNode
+    400000: hair.f.C
+    400002: hair.f.C.001
+    400004: hair.f.L
+    400006: hair.f.L.001
+    400008: hair.f.R
+    400010: hair.f.R.001
+    400012: hair.s.L
+    400014: hair.s.L.001
+    400016: hair.s.L.002
+    400018: hair.s.R
+    400020: hair.s.R.001
+    400022: hair.s.R.002
+    400024: Hair_aho
+    400026: Hair_aho.001
+    400028: Hair_F
+    400030: Hair_F_Root
+    400032: nana_hair_F
+    400034: //RootNode
+    2100000: nana_hair_F_EP
+    4300000: nana_hair_F
+    9500000: //RootNode
+    13700000: nana_hair_F
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: nana_hair_F_EP
+    second: {fileID: 2100000, guid: 2dca79b5b5d287e499d78eb56dc29877, type: 2}
+  materials:
+    importMaterials: 1
+    materialName: 1
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
