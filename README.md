@@ -1,5 +1,7 @@
-Download Unity Version [2020.3.30f1](https://unity3d.com/get-unity/download/archive) & simply open the directory named CityZoomer.
+Unity Version [2020.3.30f1](https://unity3d.com/get-unity/download/archive)
 
-Ignore the errors after import, this only happens during first import. 
+[![](https://i.ibb.co/1RykZDF/5-copy-2.png)](https://store.steampowered.com/app/1745790/City_Zoomer/)
 
-Next open the scene named Level1. From here you can enter playmode as long as Steam isn't offline.
+###### Ignore the errors after import, open scene Level1 & you can enter playmode as long as Steam isn't offline.
+
+
