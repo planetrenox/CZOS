@@ -9,4 +9,6 @@ git LFS may not download large files if downloaded from the browser, so please g
 
 ###### Ignore the errors after import, open scene Level1 & you can enter playmode as long as Steam isn't offline.
 
+if you have questions during the setup, send an email to cityzoomer@protonmail.com
+
 
